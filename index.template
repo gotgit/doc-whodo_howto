@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"   
+	"http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd" [
+<!ENTITY author "<ulink url='mailto:worldhello.net .AT. gmail.com'>蒋鑫</ulink>">
+<!ENTITY orgname "<ulink url='http://www.worldhello.net'>worldhello.net</ulink>">
+<!ENTITY % vers   SYSTEM "version.xml">
+%vers;
+]>
+<article id="index">
+<articleinfo>
+<title>WHODO 计划 Howto</title>
+<author><firstname>http://WorldHello.net</firstname></author>
+<affiliation>
+<orgname>&orgname;</orgname>
+<address><email>worldhello.net＠gmail.com</email></address>
+</affiliation>
+<revhistory>
+<revision>
+<revnumber>0.1</revnumber>
+<date>2006/04/10</date>
+<authorinitials>&author;</authorinitials>
+<revremark>创建。
+</revremark>
+</revision>
+</revhistory>
+<abstract>
+<para>
+IT 技术文档，几乎都源自英文。中文技术文档也多源自于翻译。可以预见两种可能，一、中文文献始终滞后于英文文献；二、干脆不再翻译，缴械投降，中文进一步被弱化。
+</para>
+<para>
+WHODO 项目的宗旨是中文用户自己的开放文档计划。随着越来越多华人开发者对开源项目的参与甚至是华人主导的开源项目，华人开发者不应该沦为英译汉的配角，用我们自己的文字，书写我们署名的传世之作！ 
+</para>
+<para>
+（编译自版本: &doc.revision;，最后更新时间: &doc.lastchange;）
+</para>
+</abstract>
+</articleinfo>
+
+<sect1 id="whatiswhodo"><title>WHODO 是什么？</title>
+<para>
+WHODO 即“WorldHello Open Document Origin”， “WorldHello 开放文档之源” 的缩写。是使用 Freemind + DocBook + SVN 进行技术文档撰写的开放平台，这里的所有文档遵从 GPL，人人皆可提交更改。
+</para>
+<para>
+很多人都知道大名鼎鼎的 <ulink url="http://www.tldp.org">TLDP</ulink>。就像 TLDP 项目采用 DocBook 作为协同著作的文本格式，WHODO 项目除了采用 DocBook 格式之外，还使用 FreeMind 的文档格式。即：WHODO = Freemind + DocBook + SVN.
+</para>
+
+<itemizedlist>
+<listitem>
+<para>
+Freemind + DocBook
+</para>
+<para>
+含义是 WHODO 接受的源文档的格式为 Freemind 的 .mm 格式以及 DocBook 的 .xml 格式文档。
+</para>
+</listitem>
+<listitem>
+<para>
+SVN
+</para>
+<para>
+SVN 的含义为提供 SVN 版本控制系统，以实现文档的协同著作。
+</para>
+</listitem>
+</itemizedlist>
+
+<sect2><title>FreeMind 的优势</title>
+<itemizedlist>
+<listitem>
+<para>
+所见即所得的编辑方式； 
+</para>
+</listitem>
+<listitem>
+<para>
+输出的文档格式为 XML，适合于版本控制（WHODO Hacked Edition）； 
+</para>
+</listitem>
+<listitem>
+<para>
+文章结构便于梳理，只需要鼠标拖动即可； 
+</para>
+</listitem>
+<listitem>
+<para>
+简洁又不失严密； 
+</para>
+</listitem>
+</itemizedlist>
+</sect2>
+
+<sect2><title>FreeMind 相比 DocBook 的不足</title>
+<itemizedlist>
+<listitem>
+<para>
+FreeMind 的输出格式单一，难以形成印刷版本，而 DocBook 的输出格式多样； 
+</para>
+</listitem>
+<listitem>
+<para>
+FreeMind 是提纲挈领，DocBook 是详尽阐述； 
+</para>
+</listitem>
+</itemizedlist>
+</sect2>
+
+<sect2><title>WHODO 文档的三种存在模式</title>
+<itemizedlist>
+<listitem>
+<para>
+FreeMind Only
+</para>
+<para>
+只维护 FreeMind 格式的文档；
+</para>
+</listitem>
+<listitem>
+<para>
+DocBook Only
+</para>
+<para>
+只维护 DocBook XML 格式的文档； 
+</para>
+</listitem>
+<listitem>
+<para>
+FreeMind + DocBook 
+</para>
+<para>
+FreeMind 和 DocBook 互为补充，FreeMind 作纲梳理结构，DocBook 完善内容和多种格式输出； 
+</para>
+<para>
+可以让不习惯 DocBook 的用户，和只用 DocBook 的用户，同样参与到文档撰写中来； 
+</para>
+<para>
+版本号管理：三位版本号: x.x.x。
+前两位代表 FreeMind 和 DocBook 的文章的结构同步关系； 第三位版本号代表各自的修改，同步之后第二位版本号加一，第三位归零。 
+</para>
+</listitem>
+</itemizedlist>
+</sect2>
+
+</sect1>
+
+<sect1 id="whynotwiki"><title>Wiki 难道不够么？</title>
+<para>
+Wiki 又作维客，是协同著作的伟大实践。可以作为团队的知识库支撑系统，例如 WHODO 就用 Wiki 技术进行网站的搭建。Wiki 中最著名的要数 <ulink url="http://www.wikipedia.org">维基百科</ulink>，它号称要成为我们这个星球上最大的百科全书。（不过莫须有的原因，大陆访问可能受限）
+</para>
+<para>
+难道 Wiki 不够么，还要使用 DocBook、Freemind 么？
+</para>
+<para>
+那么我来打一个比方。当你的网络出现故障：
+</para>
+<orderedlist>
+<listitem>
+<para>
+你记得访问过某个 Wiki 网站，其中有关于网络故障诊断的详细资料；
+</para>
+</listitem>
+<listitem>
+<para>
+有一个 DocBook 撰写的网络故障诊断的电子书，你看过并保存在硬盘中。
+</para>
+</listitem>
+</orderedlist>
+<para>
+第一种情况显然是远水救不了近火，因为网络故障都上不了网，何谈访问 Wiki。此时本地保存的 Freemind 文件，或者 DocBook 生成的多种格式的，能够实现的本地浏览的、可打印的、有作者署名的电子文档，马上就能够派上大用场。本地浏览，Wiki 还做不到。 
+</para>
+<para>
+打印甚至出版的需要，使得 DocBook 更胜一筹，Single Sourcing，单一文档，多种输出格式，是多少人梦寐以求的啊。 
+</para>
+<para>
+FreeMiind 的提纲挈领，FreeMind 的知识和智力的双向转化，是任何其它格式替代不了的。无论 Wiki 还是 DocBook 都存在着篇幅稍大，文章结构难以把握，而这正是 FreeMind 的强项。 
+</para>
+<para>
+Wiki 赖以成名的还有其易用的版本控制系统，而 WHODO 提供的 SVN 版本控制服务，虽然稍微复杂，但绝对值得交学费。 
+</para>
+<para>
+Eric 在谈到程序员投入到开源软件动机的时候，提到“个人成就感”是非常重要一环。而撰写一篇署名的电子文档的成就感显然比没有署名的 Wiki 页面更有成就感。
+</para>
+</sect1>
+
+<sect1 id="whodoprocess"><title>WHODO 工作流程</title>
+<para>
+下图概要显示了读者和作者在系统中的位置和工作流程。
+</para>
+<mediaobject><imageobject>
+<imagedata fileref="images/process.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase>WHODO 工作流程</phrase>
+</textobject>
+<caption>
+<para>WHODO 工作流程
+</para>
+</caption>
+</mediaobject>
+
+</sect1>
+
+<sect1 id="participate"><title>如何参与 WHODO？</title>
+<para>
+WHODO 是人人皆可参与文档撰写平台。用户可以从读者身份做起，一步一步成为 WHODO 计划的贡献者。简单的分成如下三类角色：
+</para>
+
+
+<sect2 id="reader"><title>与他人分享 WHODO 的文章</title>
+<para>
+作为读者，您可以从网站直接访问到 WHODO 文档，可以在线阅读，也可以下载到本地。WHODO 文档基于 GPL 版权，您可以传播给任何人，您可以在您的文章中任意引用，只要您指明文档的出处以及作者的有关声明。 
+</para>
+<para>
+如果您读到对您有益的文章，如果您能够给作者发一封 Email，这将会鼓励作者写出更多、更好的文档。
+</para>
+</sect2>
+
+<sect2 id="feedback"><title>为文章挑错</title>
+<para>
+文章中的纰漏在所难免，如果您发现文章中的疏漏或者不足，甚至发现文章中不当的引用，你可以采取如下方法报告： 
+</para>
+
+<itemizedlist>
+<listitem>
+<para>
+在 Wiki 中提交
+</para>
+<para>
+每一篇文章在 WHODO 中都有一个页面与之对应，您可以在页面中提交你的建议或更改。如果该页面被锁定，也可以提交到对应的对话页（Talk 页）； 
+</para>
+</listitem>
+<listitem>
+<para>
+在 问题追踪系统 中提交
+</para>
+<para>
+WHODO Wiki 的 Bug Tracking 系统 的网址为: <ulink url="http://whodo.worldhello.net/bugs"/> 。您可以在上面提交您的修改或者建议。 
+</para>
+<para>
+当您发现文档中的纰漏或者不足，您可以到问题报告系统上来，提交一个针对该文档的问题报告。
+</para>
+<para>
+或者您希望了解某方面内容，而文档中没有提及或不详细，您也可以通过问题报告系统提出您的需求，作者或者其它贡献者可能会很快加以完善。
+</para>
+<para>
+问题报告系统是对所有用户公开的，您只要到上面注册一个账号即可。
+</para>
+</listitem>
+</itemizedlist>
+</sect2>
+
+<sect2 id="share"><title>让他人分享您的文章</title>
+<para>
+如果您自己在某个技术领域有心得体会，欢迎您提交您的大作到 WHODO 网站。提交的方式: 
+</para>
+
+<itemizedlist>
+<listitem>
+<para>
+在 Wiki 中提交 
+</para>
+</listitem>
+<listitem>
+<para>
+在 问题追踪系统 中提交 
+</para>
+</listitem>
+</itemizedlist>
+</sect2>
+
+<sect2 id="shareothers"><title>推荐他人的文章</title>
+<para>
+如果您的朋友的文章可以开源共享，建议您的朋友提交到 WHODO，让大家一起帮着完善。 
+</para>
+</sect2>
+
+<sect2 id="writer"><title>作者</title>
+<para>
+作者是本系统最高权限的用户，目前不再对文档的权限进行细分。即任何一个作者均可以修改所有的 WHODO 文章。当然文章的作者、共同著作者、或者贡献者的署名的增减，在礼节上讲，应当由现作者的授权之后再进行修改。
+</para>
+<para>
+SVN 版本控制服务器，是作者的朋友，也是作者必需要面对的一座大山。 
+</para>
+<para>
+成为作者，需要经过如下步骤： 
+</para>
+
+<itemizedlist>
+<listitem>
+<para>
+是 WHODO 的贡献者 
+</para>
+<para>
+挑出过 WHODO 文章的纰漏，或者有共享文章的记录。即在 WHODO Wiki 或者 WHODO Bugs 上有过提交记录； 
+</para>
+</listitem>
+<listitem>
+<para>
+熟悉 SVN 版本控制系统
+</para>
+<para>
+如果您在给 WHODO 文章纠错过程中，提交了一份 svn differ，就证明了你有足够的版本控制系统的经验。8) 
+</para>
+</listitem>
+</itemizedlist>
+</sect2>
+
+</sect1>
+
+<sect1 id="docs"><title>WHODO 文档列表</title>
+<note>
+<para>
+更完备的文档列表，请参见 WHODO Wiki 的文档目录: <ulink url="http://whodo.worldhello.net/wiki/Category:Doc"/>
+</para>
+</note>
+
+<informaltable frame='none'>
+<tgroup cols='4' align='left' colsep='1' rowsep='1'>
+<colspec colname='c1'/>
+<colspec colname='c2'/>
+<colspec colname='c3'/>
+<colspec colname='c4'/>
+<tbody>
+<!-- whodo_docs param="list" doc="bcp"               datefrom="2002/10/26"    title="业务连续性的保证 —— BCP"--><!-- /whodo_docs -->
+<!-- whodo_docs param="list" doc="bug_tracking"      datefrom="2002/02/26"    title="缺陷追踪系统（Bug Tracking）HOWTO"--><!-- /whodo_docs -->
+<!-- whodo_docs param="list" doc="cvs_vs_starteam"   datefrom="2002/01/08"    title="版本控制：CVS vs. Starteam"--><!-- /whodo_docs -->
+<!-- whodo_docs param="list" doc="dns_howto"         datefrom="2003/01/22"    title="DNS Howto"--><!-- /whodo_docs -->
+<!-- whodo_docs param="list" doc="docbook_howto"     datefrom="2002/09/18"    title="文档的技术革命 —— DocBook"       mmindex="mindmap/docbook.mm" --><!-- /whodo_docs -->
+<!-- whodo_docs param="list" doc="drinktea"          datefrom="2006/05/03"    title="全国专业技术人员计算机应用能力考试" mmindex="computer_exam_zyjs.mm" --><!-- /whodo_docs -->
+<!-- whodo_docs param="list" doc="email_howto"       datefrom="2003/02/11"    title="有效沟通和知识管理 —— Email"--><!-- /whodo_docs -->
+<!-- whodo_docs param="list" doc="freemind"          datefrom="2006/04/17"    title="FreeMind Hacking Howto"--><!-- /whodo_docs -->
+<!-- whodo_docs param="list" doc="health"            datefrom="2003/01/29"    title="摘抄：健康指南"--><!-- /whodo_docs -->
+<!-- whodo_docs param="list" doc="inn_howto"         datefrom="2002/10/14"    title="有效沟通和知识管理 —— News"--><!-- /whodo_docs -->
+<!-- whodo_docs param="list" doc="mailinglist"       datefrom="2003/02/22"    title="有效沟通和知识管理 —— Maillist"--><!-- /whodo_docs -->
+<!-- whodo_docs param="list" doc="makefile_howto"    datefrom="2006/04/26"    title="Makefile Howto"--><!-- /whodo_docs -->
+<!-- whodo_docs param="list" doc="nightlybuild"      datefrom="2002/03/20"    title="持续集成 —— 每晚构建/Nightly Build"--><!-- /whodo_docs -->
+<!-- whodo_docs param="list" doc="personal_firewall" datefrom="2002/10/30"    title="信息安全 —— 个人防火墙"--><!-- /whodo_docs -->
+<!-- whodo_docs param="list" doc="pgp"               datefrom="2002/02/20"    title="PGP/GPG HOWTO"--><!-- /whodo_docs -->
+<!-- whodo_docs param="list" doc="program_rules"     datefrom="2002/01/11"    title="C 语言开发规范参考"--><!-- /whodo_docs -->
+<!-- whodo_docs param="list" doc="python"            datefrom="2006/04/25"    title="Python 学习笔记"--><!-- /whodo_docs -->
+<!-- whodo_docs param="list" doc="search_engine"     datefrom="2003/06/08"    title="有效沟通和知识管理 —— 搜索引擎"--><!-- /whodo_docs -->
+<!-- whodo_docs param="list" doc="svn_hooks"         datefrom="2006/04/27"    title="Subversion Hooks"--><!-- /whodo_docs -->
+<!-- whodo_docs param="list" doc="website_howto"     datefrom="2002/11/15"    title="网站管理 Howto"--><!-- /whodo_docs -->
+<!-- whodo_docs param="list" doc="whodo_howto"       datefrom="2006/04/10"    title="WHODO 计划 Howto"--><!-- /whodo_docs -->
+<!-- whodo_docs param="list" doc="wiki_howto"        datefrom="2003/07/08"    title="有效沟通和知识管理 —— Wiki"--><!-- /whodo_docs -->
+</tbody>
+</tgroup>
+</informaltable>
+
+</sect1>
+
+<sect1 id="contributors"><title>WHODO 贡献者列表</title>
+<para>
+参见 <ulink url="http://whodo.worldhello.net/wiki/Category:Author"/>
+</para>
+</sect1>
+
+<appendix id="worldhello"><title>WHODO 前传</title>
+<para>
+http://www.worldhello.net 网站诞生于 2002 年底，最早是我的个人网站，那时网站叫做 Johnson's Homepage。
+那个时候，已经有了一年多 DocBook 使用经验的我，迫不及待的想借用个人网站的形式对 DocBook 加以推广，WorldHello 就这么诞生了。
+以 DocBook 进行文档的撰写和个人的知识总结，是 WorldHello 的特色，但那个时候，往好听了说是独自耕耘，其实就是自言自语。
+</para>
+<para>
+2004 年开始接触到 MindMap，直到后来发现了 Freemind 这个伟大的处理“思维导图”的开源软件，我的个人文档撰写和知识积累的习惯再一次被颠覆了。
+</para>
+<para>
+2005年中开始筹建公司，主要方向是“开源软件”的商业支持。忽然发现仍然有很多网友关心着我渐已荒废的文档。为什么不开源呢？一方面将我荒废的文档交由感兴趣的作者继续维护，另外一方面，将 WorldHello 网站由一个个性展示的平台真正向本网站的初衷：“推广 Freemind + DocBook + CVS/SVN 的文档撰写模式，开创中文开放文档之源”迈进。
+</para>
+<para>
+如果您想看看 WHODO 计划之前的 WorldHello.net，一个用 DocBook Website 构建的网站，还可以在这里找到 <ulink url="http://jiangxin.worldhello.net">http://jiangxin.worldhello.net</ulink>。
+</para>
+</appendix>
+
+<appendix id="freemind"><title>关于 FreeMind</title>
+<para>
+关于 FreeMind，可以参照：
+</para>
+
+<itemizedlist>
+<listitem>
+<para>
+<ulink url="http://whodo.worldhello.net/wiki/FreeMind">WHODO Wiki 上的 FreeMind 条目</ulink>；
+</para>
+</listitem>
+<listitem>
+<para>
+<ulink url="http://www.worldhello.net/doc/freemind/freemind.mm">《FreeMiind Hacking Howto》</ulink> （FreeMind 格式）；
+</para>
+</listitem>
+</itemizedlist>
+
+<para>
+提交到 WHODO 的 Freemind 文档，需要使用 WorldHello 改进过的 Freemind。我们对 Freemind 的改进主要是便于对 Freemind 文档进行版本控制，以及更好的中文支持。
+</para>
+<para>
+改进如下：
+</para>
+<itemizedlist>
+<listitem>
+<para>
+改进的中文支持
+</para>
+<para>
+Freemind 0.8.0 的思维导图如果输入中文，存储的 .mm 文件中所有的中文都换码，类似这样 &amp;#xd0d6;&amp;#xc4ce; 的存储方式。看过 Freemind 的代码，知道凡是 ASSCII 码大于 126 或者 0-32 的字符全部如此方式换码。这对于比较前后两个更改的思维导图的差异，实在是太困难了！
+</para>
+<para>
+Freemind 0.8.0 对于 Unicode 支持也不好，存储的 .mm 文件的编码方式是和平台相关的，对于中文，可能是 big5, gb2312 也许是 utf-8，而且 .mm 文件又没有包含字符集的 XML 声明。
+</para>
+</listitem>
+<listitem>
+<para>
+版本控制友好格式
+</para>
+<para>
+如果您用过版本控制系统来维护 .mm 文件的变更，您应该会和我一样感到不便。就是没有做任何改动，只是浏览了一下思维导图，展开或者关闭了某个分支，当关闭 .mm 文件时，Freemind 就会提示您保存文件。而版本控制系统也会提示您文件修改了，需要重新 Checkin。
+</para>
+<para>
+这是因为 Freemind 把节点的展开或者收拢都记录在 .mm 文件中。这对于 WHODO 计划要将 Freemind 格式文档作为可提交的源文档的最大的挑战。
+</para>
+</listitem>
+</itemizedlist>
+
+<para>
+我本人并非 Java 专家，只是由于 Freemind 的这些小缺点搔到了我的痒处，使得我不得不率先做了修改 Freemind 的尝试。我对 Freemind 的修改已经提交到 Freemind 的 Wiki 页面上了，参见: <ulink url="http://freemind.sourceforge.net/wiki/index.php/User:Jiangxin">http://freemind.sourceforge.net/wiki/index.php/User:Jiangxin</ulink>。
+</para>
+<para>
+FreeMind hacked 代码可以从 WHODO 网站下载，编译好的二进制文件也可以下载到。地址参见：<ulink url="http://whodo.worldhello.net/wiki/FreeMind">WHODO Wiki 上的 FreeMind 条目</ulink>；
+</para>
+<warning>
+<para>
+但是这个版本的 Freemind 合并 .mm 文件和 .mmx 文件的处理上非常低效，我也把这个问题提交到 Freemind 的网站上了，希望 Java 高手能助一臂之力。
+</para>
+</warning>
+</appendix>
+
+<appendix id="docbook"><title>关于 DocBook</title>
+<para>
+关于 DocBook，可以参照：
+</para>
+
+<itemizedlist>
+<listitem>
+<para>
+<ulink url="http://whodo.worldhello.net/wiki/DocBook">WHODO Wiki 上的 DocBook 条目</ulink>；
+</para>
+</listitem>
+<listitem>
+<para>
+<ulink url="http://www.worldhello.net/doc/docbook_howto">《DocBook Howto》</ulink>；
+</para>
+</listitem>
+</itemizedlist>
+
+</appendix>
+
+<appendix id="svn"><title>关于 SVN 版本控制系统</title>
+<para>
+关于 SVN，可以参照：<ulink url="http://whodo.worldhello.net/wiki/SVN">WHODO Wiki 上的 SVN 条目</ulink>。
+</para>
+</appendix>
+
+<appendix id="bugs"><title>关于 问题报告系统</title>
+<para>
+关于问题报告系统，访问：<ulink url="http://whodo.worldhello.net/bugs">这里</ulink>。
+</para>
+</appendix>
+
+<appendix id="wiki"><title>关于 WHODO Wiki</title>
+<para>
+关于 Wiki，可以参照：<ulink url="http://whodo.worldhello.net/wiki/Help:Contents">WHODO Wiki 上的帮助系统</ulink>。
+</para>
+</appendix>
+
+<appendix id="forum"><title>关于 WHODO 论坛</title>
+<para>
+关于 WHODO 论坛，访问：<ulink url="http://whodo.worldhello.net/forum">这里</ulink>。
+</para>
+
+</appendix>
+
+</article>
