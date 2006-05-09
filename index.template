@@ -324,7 +324,7 @@ SVN 版本控制服务器，是作者的朋友，也是作者必需要面对的�
 <!-- whodo_docs param="list" doc="cvs_vs_starteam"   datefrom="2002/01/08"    title="版本控制：CVS vs. Starteam"--><!-- /whodo_docs -->
 <!-- whodo_docs param="list" doc="dns_howto"         datefrom="2003/01/22"    title="DNS Howto"--><!-- /whodo_docs -->
 <!-- whodo_docs param="list" doc="docbook_howto"     datefrom="2002/09/18"    title="文档的技术革命 —— DocBook"       mmindex="mindmap/docbook.mm" --><!-- /whodo_docs -->
-<!-- whodo_docs param="list" doc="drinktea"          datefrom="2006/05/03"    title="全国专业技术人员计算机应用能力考试" mmindex="computer_exam_zyjs.mm" --><!-- /whodo_docs -->
+<!-- whodo_docs param="list" doc="computer_exam"     datefrom="2006/05/03"    title="全国专业技术人员计算机应用能力考试" mmindex="computer_exam_zyjs.mm" --><!-- /whodo_docs -->
 <!-- whodo_docs param="list" doc="email_howto"       datefrom="2003/02/11"    title="有效沟通和知识管理 —— Email"--><!-- /whodo_docs -->
 <!-- whodo_docs param="list" doc="freemind"          datefrom="2006/04/17"    title="FreeMind Hacking Howto"--><!-- /whodo_docs -->
 <!-- whodo_docs param="list" doc="health"            datefrom="2003/01/29"    title="摘抄：健康指南"--><!-- /whodo_docs -->
