@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="0.8.0">
 <!-- This .mm file is CVS/SVN friendly, also has better Chinese character support. Contribute by http://www.WorldHello.net, orignal FreeMind can be found at http://freemind.sourceforge.net -->
-<node ID="Freemind_Link_1738528425" 
+<node COLOR="#990033" ID="Freemind_Link_1738528425" 
 	TEXT="Whodo Howto">
-<node FOLDED="true" ID="_" POSITION="right" 
+<font BOLD="true" NAME="SansSerif" SIZE="13"/>
+<node FOLDED="true" ID="_" POSITION="right" STYLE="bubble" 
 	TEXT="Whodo 是什么？">
 <node ID="Freemind_Link_1644624127" 
 	TEXT="Whodo 不是 Solaris 上的 whodo 命令，而是一个中文开放文档计划。"/>
@@ -12,7 +13,7 @@
 <node ID="Freemind_Link_1178194788" 
 	TEXT="WHODO = Freemind + DocBook + Wiki + Subversion"/>
 </node>
-<node FOLDED="true" ID="Freemind_Link_1263641711" POSITION="right" 
+<node FOLDED="true" ID="Freemind_Link_1263641711" POSITION="right" STYLE="bubble" 
 	TEXT="Wiki 难道不够么？">
 <node ID="Freemind_Link_1168664395" 
 	TEXT="Wiki 又作维客，是协同著作的伟大实践。Wiki 可以作为团队的知识库支撑系统，例如 WHODO 就用 Wiki 技术进行主页的搭建。"/>
@@ -51,7 +52,7 @@
 </node>
 </node>
 </node>
-<node FOLDED="true" ID="Freemind_Link_1876846164" POSITION="right" 
+<node FOLDED="true" ID="Freemind_Link_1876846164" POSITION="right" STYLE="bubble" 
 	TEXT="Whodo 子系统">
 <node FOLDED="true" ID="Freemind_Link_1590385114" 
 	TEXT="邮件列表">
@@ -112,12 +113,12 @@
 	TEXT="参见： http://whodo.worldhello.net/wiki/DocBook"/>
 </node>
 </node>
-<node FOLDED="true" ID="Freemind_Link_206098046" POSITION="right" 
+<node FOLDED="true" ID="Freemind_Link_206098046" POSITION="right" STYLE="bubble" 
 	TEXT="Whodo 工作流程">
-<node ID="Freemind_Link_1565755613" 
-	TEXT="&lt;html&gt;&#xa;&lt;h2&gt;图示&lt;/h2&gt;&#xa;&lt;pre&gt;&#xa;     | &lt;--- [ Freemind ] &lt;---- *.mm          &lt;--下载-- |               | &lt;--------------------------- |     |&#xa;读者 |                                              | WHODO Website |                             | SVN |&#xa;     |                         *.html, *.chm        |               |                             |     |&#xa;     | &lt;--- [ IE, Word ] &lt;---- *.pdf,  *.rtf &lt;--下载-- |               | &lt;--- [ DocBook 编译系统 ] -- |     |&#xa;     |                         *.txt&#xa;     &#xa;     | &lt;--&gt; [ Freemind* ] &lt;----------------------&gt; *.mm  &lt;----&gt; |     |&#xa;作者 |                                                       | SVN |&#xa;     | &lt;--&gt; [ Notepad, Ultraedit, Eclipse...] &lt;--&gt; *.xml &lt;----&gt; |     |&#xa;     |                      &#xa;&lt;/pre&gt;"/>
+<node ID="Freemind_Link_1816335897" 
+	TEXT="&lt;html&gt;&lt;img src=&quot;images/process.png&quot;&gt;"/>
 </node>
-<node FOLDED="true" ID="Freemind_Link_683054111" POSITION="right" 
+<node FOLDED="true" ID="Freemind_Link_683054111" POSITION="right" STYLE="bubble" 
 	TEXT="如何参与 Whodo？">
 <node ID="Freemind_Link_24001140" 
 	TEXT="WHODO 是人人皆可参与文档撰写平台。用户可以从读者身份做起，一步一步成为 WHODO 计划的贡献者。"/>
@@ -170,8 +171,9 @@
 	TEXT="作者/贡献者 最重要的特征是：拥有 Subversion 版本控制系统的账号，可以修改 Whodo 的所有文章。"/>
 </node>
 </node>
-<node FOLDED="true" ID="Freemind_Link_660504500" POSITION="right" 
+<node FOLDED="true" ID="Freemind_Link_660504500" POSITION="right" STYLE="bubble" 
 	TEXT="如何获得 Subversion 版本控制系统的账号，成为 Whodo 的贡献者">
+<cloud COLOR="#ccccff"/>
 <node FOLDED="true" ID="Freemind_Link_839000388" 
 	TEXT="注册账号">
 <node ID="Freemind_Link_1715266197" 
@@ -331,7 +333,7 @@
 	TEXT="具体参照其他文档的 Wiki 页面"/>
 </node>
 </node>
-<node FOLDED="true" ID="Freemind_Link_530640213" POSITION="right" 
+<node FOLDED="true" ID="Freemind_Link_530640213" POSITION="right" STYLE="bubble" 
 	TEXT="关注 Whodo 的安全">
 <node FOLDED="true" ID="Freemind_Link_1781193737" 
 	TEXT="文档质量标准">
@@ -350,20 +352,21 @@
 	TEXT="一旦发现用户提交垃圾数据或者破坏他人文章的行为，管理员有权封锁直至删除该用户账号"/>
 </node>
 </node>
-<node FOLDED="true" ID="Freemind_Link_1743143715" POSITION="right" 
+<node FOLDED="true" ID="Freemind_Link_1743143715" POSITION="right" STYLE="bubble" 
 	TEXT="WHODO 文档列表">
-<node ID="Freemind_Link_1933636883" 
+<node ID="Freemind_Link_1933636883" LINK="http://whodo.worldhello.net/wiki/Category:Doc" 
 	TEXT="Wiki 的 doc 分类：http://whodo.worldhello.net/wiki/Category:Doc"/>
-<node ID="Freemind_Link_1742916729" 
+<node ID="Freemind_Link_1742916729" LINK="http://www.worldhello.net/doc/docs.html" 
 	TEXT="http://www.worldhello.net/doc/docs.html"/>
 </node>
-<node FOLDED="true" ID="Freemind_Link_1040339879" POSITION="right" 
+<node FOLDED="true" ID="Freemind_Link_1040339879" POSITION="right" STYLE="bubble" 
 	TEXT="WHODO 贡献者列表">
-<node ID="Freemind_Link_301088751" 
+<node ID="Freemind_Link_301088751" LINK="http://whodo.worldhello.net/wiki/Category:Author" 
 	TEXT="Wiki 的 author 列表：http://whodo.worldhello.net/wiki/Category:Author"/>
 </node>
-<node FOLDED="true" ID="Freemind_Link_1870376841" POSITION="left" 
+<node FOLDED="true" ID="Freemind_Link_1870376841" POSITION="left" STYLE="bubble" 
 	TEXT="附录">
+<cloud COLOR="#ccffcc"/>
 <node FOLDED="true" ID="Freemind_Link_191946185" 
 	TEXT="WHODO 历史">
 <node ID="Freemind_Link_938636007" 
@@ -477,6 +480,8 @@
 	TEXT="SVN 客户端">
 <node ID="Freemind_Link_1888663727" 
 	TEXT="Windows 用户推荐使用 TortoiseSVN 。"/>
+<node ID="Freemind_Link_1835240616" 
+	TEXT="Windows 安装 Cygwin，提供更强大命令行支持，包括 svn 命令行客户端。"/>
 </node>
 </node>
 </node>
