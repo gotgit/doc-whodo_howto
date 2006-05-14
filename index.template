@@ -8,7 +8,7 @@
 ]>
 <article id="index">
 <articleinfo>
-<title>WHODO 计划 Howto</title>
+<title>Whodo 计划 Howto</title>
 <author><firstname>http://WorldHello.net</firstname></author>
 <affiliation>
 <orgname>&orgname;</orgname>
@@ -28,7 +28,7 @@
 IT 技术文档，几乎都源自英文。中文技术文档也多源自于翻译。可以预见两种可能，一、中文文献始终滞后于英文文献；二、干脆不再翻译，缴械投降，中文进一步被弱化。
 </para>
 <para>
-WHODO 项目的宗旨是中文用户自己的开放文档计划。随着越来越多华人开发者对开源项目的参与甚至是华人主导的开源项目，华人开发者不应该沦为英译汉的配角，用我们自己的文字，书写我们署名的传世之作！ 
+Whodo 项目的宗旨是中文用户自己的开放文档计划。随着越来越多华人开发者对开源项目的参与甚至是华人主导的开源项目，华人开发者不应该沦为英译汉的配角，用我们自己的文字，书写我们署名的传世之作！ 
 </para>
 <para>
 （编译自版本: &doc.revision;，最后更新时间: &doc.lastchange;）
@@ -36,12 +36,15 @@ WHODO 项目的宗旨是中文用户自己的开放文档计划。随着越来�
 </abstract>
 </articleinfo>
 
-<sect1 id="whatiswhodo"><title>WHODO 是什么？</title>
+<sect1 id="whatiswhodo"><title>Whodo 是什么？</title>
 <para>
-WHODO 即“WorldHello Open Document Origin”， “WorldHello 开放文档之源” 的缩写。是使用 Freemind + DocBook + SVN 进行技术文档撰写的开放平台，这里的所有文档遵从 GPL，人人皆可提交更改。
+Whodo 不是 Solaris 上的 whodo 命令，而是一个中文开放文档计划。
 </para>
 <para>
-很多人都知道大名鼎鼎的 <ulink url="http://www.tldp.org">TLDP</ulink>。就像 TLDP 项目采用 DocBook 作为协同著作的文本格式，WHODO 项目除了采用 DocBook 格式之外，还使用 FreeMind 的文档格式。即：WHODO = Freemind + DocBook + SVN.
+Whodo 是“WorldHello Open Document Origin ”，即 “WorldHello 开放文档之源” 的缩写。是使用 Freemind + DocBook + Wiki + SVN 进行技术文档撰写的开放平台，这里的所有文档遵从 GPL，人人皆可提交更改。
+</para>
+<para>
+很多人都知道大名鼎鼎的 <ulink url="http://www.tldp.org">TLDP</ulink>。就像 TLDP 项目采用 DocBook 作为协同著作的文本格式，Whodo 项目除了采用 DocBook 格式之外，还使用 FreeMind 的文档格式。即：Whodo = Freemind + DocBook + Wiki + Subversion.
 </para>
 
 <itemizedlist>
@@ -50,15 +53,23 @@ WHODO 即“WorldHello Open Document Origin”， “WorldHello 开放文档之�
 Freemind + DocBook
 </para>
 <para>
-含义是 WHODO 接受的源文档的格式为 Freemind 的 .mm 格式以及 DocBook 的 .xml 格式文档。
+含义是 Whodo 接受的源文档的格式为 Freemind 的 .mm 格式以及 DocBook 的 .xml 格式文档。
 </para>
 </listitem>
 <listitem>
 <para>
-SVN
+Wiki
 </para>
 <para>
-SVN 的含义为提供 SVN 版本控制系统，以实现文档的协同著作。
+Whodo 使用 Wiki 来作为系统的首页，还用来构建文档的索引、链接、和文档的归类，便于搜索引擎的检索。
+</para>
+</listitem>
+<listitem>
+<para>
+Subversion （简称 SVN）
+</para>
+<para>
+Subversion 版本控制系统，是 Whodo 数据交换的中心，是帮助实现协同著作的平台。
 </para>
 </listitem>
 </itemizedlist>
@@ -72,7 +83,7 @@ SVN 的含义为提供 SVN 版本控制系统，以实现文档的协同著作�
 </listitem>
 <listitem>
 <para>
-输出的文档格式为 XML，适合于版本控制（WHODO Hacked Edition）； 
+输出的文档格式为 XML，适合于版本控制（Whodo Hacked Edition）； 
 </para>
 </listitem>
 <listitem>
@@ -103,7 +114,7 @@ FreeMind 是提纲挈领，DocBook 是详尽阐述；
 </itemizedlist>
 </sect2>
 
-<sect2><title>WHODO 文档的三种存在模式</title>
+<sect2><title>Whodo 文档的三种存在模式</title>
 <itemizedlist>
 <listitem>
 <para>
@@ -143,10 +154,10 @@ FreeMind 和 DocBook 互为补充，FreeMind 作纲梳理结构，DocBook 完善
 
 <sect1 id="whynotwiki"><title>Wiki 难道不够么？</title>
 <para>
-Wiki 又作维客，是协同著作的伟大实践。可以作为团队的知识库支撑系统，例如 WHODO 就用 Wiki 技术进行网站的搭建。Wiki 中最著名的要数 <ulink url="http://www.wikipedia.org">维基百科</ulink>，它号称要成为我们这个星球上最大的百科全书。（不过莫须有的原因，大陆访问可能受限）
+Wiki 又作维客，是协同著作的伟大实践。可以作为团队的知识库支撑系统，例如 Whodo 就用 Wiki 技术进行网站的搭建。Wiki 中最著名的要数 <ulink url="http://www.wikipedia.org">维基百科</ulink>，它号称要成为我们这个星球上最大的百科全书。（不过某种原因，大陆访问可能受限）
 </para>
 <para>
-难道 Wiki 不够么，还要使用 DocBook、Freemind 么？
+难道 Wiki 不够么，还要使用 DocBook、Freemind 么？简单的回答就是，Wiki 的文档，不能够本地修改和阅读，必须要在线才能浏览和编辑。
 </para>
 <para>
 那么我来打一个比方。当你的网络出现故障：
@@ -173,14 +184,93 @@ Wiki 又作维客，是协同著作的伟大实践。可以作为团队的知识
 FreeMiind 的提纲挈领，FreeMind 的知识和智力的双向转化，是任何其它格式替代不了的。无论 Wiki 还是 DocBook 都存在着篇幅稍大，文章结构难以把握，而这正是 FreeMind 的强项。 
 </para>
 <para>
-Wiki 赖以成名的还有其易用的版本控制系统，而 WHODO 提供的 SVN 版本控制服务，虽然稍微复杂，但绝对值得交学费。 
+Wiki 赖以成名的还有其易用的版本控制系统，但仅仅限于 Wiki 条目本身而已。Whodo 提供的 SVN 版本控制服务则对 Whodo 所有的文档和代码通通管理起来，虽然使用更复杂，但绝对值得交学费。
 </para>
 <para>
 Eric 在谈到程序员投入到开源软件动机的时候，提到“个人成就感”是非常重要一环。而撰写一篇署名的电子文档的成就感显然比没有署名的 Wiki 页面更有成就感。
 </para>
+<para>
+不过 Whodo 中 Wiki 也是重要一环，因为 Wiki 用来构建文档的索引、链接、归类，便于搜索引擎的检索。
+</para>
 </sect1>
 
-<sect1 id="whodoprocess"><title>WHODO 工作流程</title>
+<sect1 id="whodosubsystem"><title>Whodo 子系统</title>
+<para>
+Whodo 主要包括 邮件列表、维客、论坛、问题追踪系统、版本控制系统、FreeMind 编辑编译系统 和 DocBook 编译系统 等组成。
+</para>
+
+<sect2><title>邮件列表</title>
+<para>
+之所以先提及邮件列表，是因为通过邮件列表，您可以更迅捷的获得  Whodo 的响应。
+</para>
+<para>
+邮件列表系统的地址，参见： <ulink url="http://whodo.worldhello.net/list"/>。
+</para>
+</sect2>
+
+<sect2><title>维客</title>
+<para>
+如前所述，用 Wiki 用来构建文档的索引、链接、归类，便于搜索引擎的检索。
+</para>
+<para>
+地址，参见： <ulink url="http://whodo.worldhello.net/wiki"/>。
+</para>
+</sect2>
+
+<sect2><title>论坛</title>
+<para>
+论坛是 Whodo 的沟通系统。
+</para>
+<para>
+地址，参见： <ulink url="http://whodo.worldhello.net/forum"/>。
+</para>
+</sect2>
+
+<sect2><title>问题追踪系统</title>
+<para>
+基于 Mantis 的问题追踪系统，可以用于对 Whodo 系统以及文档的疏漏和建议进行汇总和追踪。
+</para>
+<para>
+地址，参见： <ulink url="http://whodo.worldhello.net/bugs"/>。
+</para>
+</sect2>
+
+<sect2><title>Subversion 版本控制系统</title>
+<para>
+SVN 版本控制系统，是 WHODO 作者修改和提交文章的支撑系统。普通用户只有只读权限，作者/贡献者拥有 “/trunk/doc” 目录的完全权限。
+</para>
+<para>
+在账号整合之前，如果用户需要修改用户口令，需要用 htpasswd -nm 创建口令，将加密口令传给管理员即可。
+</para>
+<para>
+地址，参见： <ulink url="http://svn.worldhello.net"/>。
+</para>
+</sect2>
+
+<sect2><title>FreeMind 编辑、编译系统</title>
+<para>
+本网站的 FreeMind 文档使用增强版的 FreeMind 编辑的。原因参见 <ulink url="http://whodo.worldhello.net/wiki/FreeMind"/>。
+</para>
+<para>
+FreeMind 的编译系统，指的是将 *.mm 文件转换为 *.html 文档。
+</para>
+</sect2>
+
+<sect2><title>DocBook 编译系统</title>
+<para>
+包括 Whodo 定制的 DocBook XSL。
+</para>
+<para>
+包括相应的编译脚本，将 DocBook *.xml 转换为 *.html, *.pdf, *.rtf, *.chm, *.txt 等。
+</para>
+<para>
+参见： <ulink url="http://whodo.worldhello.net/wiki/DocBook"/>。
+</para>
+</sect2>
+
+</sect1>
+
+<sect1 id="whodoprocess"><title>Whodo 工作流程</title>
 <para>
 下图概要显示了读者和作者在系统中的位置和工作流程。
 </para>
@@ -188,51 +278,61 @@ Eric 在谈到程序员投入到开源软件动机的时候，提到“个人成
 <imagedata fileref="images/process.png" format="PNG"/>
 </imageobject>
 <textobject>
-<phrase>WHODO 工作流程</phrase>
+<phrase>Whodo 工作流程</phrase>
 </textobject>
 <caption>
-<para>WHODO 工作流程
+<para>Whodo 工作流程
 </para>
 </caption>
 </mediaobject>
 
 </sect1>
 
-<sect1 id="participate"><title>如何参与 WHODO？</title>
+<sect1 id="whodo.roles"><title>如何参与 Whodo？</title>
 <para>
-WHODO 是人人皆可参与文档撰写平台。用户可以从读者身份做起，一步一步成为 WHODO 计划的贡献者。简单的分成如下三类角色：
+Whodo 是人人皆可参与文档撰写平台。用户可以从读者身份做起，一步一步成为 Whodo 计划的贡献者。简单的分成如下三类角色：
 </para>
 
 
-<sect2 id="reader"><title>与他人分享 WHODO 的文章</title>
+<sect2 id="role.reader"><title>读者</title>
 <para>
-作为读者，您可以从网站直接访问到 WHODO 文档，可以在线阅读，也可以下载到本地。WHODO 文档基于 GPL 版权，您可以传播给任何人，您可以在您的文章中任意引用，只要您指明文档的出处以及作者的有关声明。 
+作为读者，您可以从网站直接访问到 WHODO 文档，可以在线阅读，也可以下载到本地。
 </para>
 <para>
 如果您读到对您有益的文章，如果您能够给作者发一封 Email，这将会鼓励作者写出更多、更好的文档。
 </para>
 </sect2>
 
-<sect2 id="feedback"><title>为文章挑错</title>
-<para>
-文章中的纰漏在所难免，如果您发现文章中的疏漏或者不足，甚至发现文章中不当的引用，你可以采取如下方法报告： 
-</para>
-
+<sect2 id="role.feedback"><title>参与者</title>
 <itemizedlist>
 <listitem>
 <para>
-在 Wiki 中提交
+通过 Wiki 反馈
 </para>
 <para>
-每一篇文章在 WHODO 中都有一个页面与之对应，您可以在页面中提交你的建议或更改。如果该页面被锁定，也可以提交到对应的对话页（Talk 页）； 
+Wiki 地址: <ulink url="http://whodo.worldhello.net/wiki"/>。
+</para>
+<para>
+每一个 Wiki 页面都有一个对应的对话（talk）页，可以在上面发表对文章的评论。
+</para>
+<para>
+每一个注册用户都有一个用户页（如 <ulink url="http://whodo.worldhello.net/wiki/User:Jiangxin"/>）。当然有的作者还没有来得及编辑他的用户页。
 </para>
 </listitem>
 <listitem>
 <para>
-在 问题追踪系统 中提交
+通过论坛反馈
 </para>
 <para>
-WHODO Wiki 的 Bug Tracking 系统 的网址为: <ulink url="http://whodo.worldhello.net/bugs"/> 。您可以在上面提交您的修改或者建议。 
+论坛地址: <ulink url="http://whodo.worldhello.net/forum"/>。
+</para>
+</listitem>
+<listitem>
+<para>
+通过问题追踪系统反馈
+</para>
+<para>
+Whodo Wiki 的 Bug Tracking 系统 的网址为: <ulink url="http://whodo.worldhello.net/bugs"/> 。您可以在上面提交您的修改或者建议。 
 </para>
 <para>
 当您发现文档中的纰漏或者不足，您可以到问题报告系统上来，提交一个针对该文档的问题报告。
@@ -247,68 +347,156 @@ WHODO Wiki 的 Bug Tracking 系统 的网址为: <ulink url="http://whodo.worldh
 </itemizedlist>
 </sect2>
 
-<sect2 id="share"><title>让他人分享您的文章</title>
+<sect2 id="role.author"><title>作者/贡献者</title>
 <para>
-如果您自己在某个技术领域有心得体会，欢迎您提交您的大作到 WHODO 网站。提交的方式: 
+作者 或称作 贡献者，他们无私的让大家分享自己的研究成果、自己的所感所想。或者利用自己的业余时间，在自己擅长的领域和他人一起协同工作，撰写传世之作。
+</para>
+<para>
+作者/贡献者 最重要的特征是：拥有 Subversion 版本控制系统的账号，可以修改 Whodo 的所有文章。
+</para>
+</sect2>
+</sect1>
+
+<sect1 id="become.author"><title>成为 Whodo 的贡献者</title>
+<para>
+如何获得 Subversion 版本控制系统的账号，成为 Whodo 的贡献者？
 </para>
 
 <itemizedlist>
 <listitem>
 <para>
-在 Wiki 中提交 
+注册账号
+</para>
+<para>
+在 Whodo 各个子系统的用户注册尚未整合之前，需要分别注册；
 </para>
 </listitem>
 <listitem>
 <para>
-在 问题追踪系统 中提交 
+上传自己的文档，以下任何一种方式均可：
 </para>
-</listitem>
-</itemizedlist>
-</sect2>
-
-<sect2 id="shareothers"><title>推荐他人的文章</title>
-<para>
-如果您的朋友的文章可以开源共享，建议您的朋友提交到 WHODO，让大家一起帮着完善。 
-</para>
-</sect2>
-
-<sect2 id="writer"><title>作者</title>
-<para>
-作者是本系统最高权限的用户，目前不再对文档的权限进行细分。即任何一个作者均可以修改所有的 WHODO 文章。当然文章的作者、共同著作者、或者贡献者的署名的增减，在礼节上讲，应当由现作者的授权之后再进行修改。
-</para>
-<para>
-SVN 版本控制服务器，是作者的朋友，也是作者必需要面对的一座大山。 
-</para>
-<para>
-成为作者，需要经过如下步骤： 
-</para>
-
 <itemizedlist>
 <listitem>
 <para>
-是 WHODO 的贡献者 
+通过 Wiki 系统上传
 </para>
 <para>
-挑出过 WHODO 文章的纰漏，或者有共享文章的记录。即在 WHODO Wiki 或者 WHODO Bugs 上有过提交记录； 
+通过 <ulink url="http://whodo.worldhello.net/wiki/Special:Upload"/> 页面上传文档；
+</para>
+<para>
+接受的上传文档格式有: *.mm, *.xml, *.gz, *.zip, *.rar 等；
 </para>
 </listitem>
 <listitem>
 <para>
-熟悉 SVN 版本控制系统
-</para>
-<para>
-如果您在给 WHODO 文章纠错过程中，提交了一份 svn differ，就证明了你有足够的版本控制系统的经验。8) 
+通过 论坛 系统上传
 </para>
 </listitem>
 </itemizedlist>
-</sect2>
+</listitem>
+
+<listitem>
+<para>
+撰写一篇 Wiki 页面
+</para>
+<para>
+每个文档对应一个 Wiki 页面，包含文档链接。
+</para>
+<para>
+创建一个页面（页面名称最好为英文，简洁但不失文章主题）。
+</para>
+<para>
+新创建的页面中除了包含文档名称，提交者，提交时间等信息外，还包括如下内容：
+</para>
+<para>
+指向刚刚上传的文档链接，或外部文档链接。 通过 Wiki 上传的文档链接为 [[Media:上传文档名]]。如 [[Media:Curl.mm]]。
+</para>
+<para>
+在页面最前面插入模板： {{草稿}}。模板{{草稿}}，会自动将文档归于 Doc 和草稿分类，并有醒目标识，提醒管理员注意有新用户提交新文档。如： <ulink url="http://whodo.worldhello.net/wiki/Curl_howto"/>。
+</para>
+</listitem>
+
+<listitem>
+<para>
+给管理者发送邮件，获得账号
+</para>
+<para>
+可以在 Wiki 上通过 <ulink url="http://whodo.worldhello.net/wiki/Special:Emailuser/admin"/> 给管理员发送邮件。管理员受到邮件后，会阅读用户上传的文档，根据是否符合 whodo 文档精神，批准或否决账号申请。
+</para>
+</listitem>
+
+<listitem>
+<para>
+用 subversion 账号提交文档
+</para>
+<para>
+一旦收到管理员提供的 subversion 账户信息后，就可以提交文档。Whodo 文档提交到 Whodo subversion 路径： http://svn.worldhello.net/whodo/trunk/doc 的子目录下。
+DocBook 格式文档的首页文档名为 index.xml；FreeMind 文档的文件名和子目录名同名，扩展名为 .mm。
+</para>
+<para>
+提交文档，要设定文件的 svn:mime-type 或者 svn:eol-style 属性，还要写 commit log，否则会触发 subversion hooks，导致提交被退回。具体参见附录关于 SVN 的说明。
+</para>
+<para>
+subversion 除了 /trunk/doc 外，其他目录暂时只读，如果需要修改其他目录，请和管理员联系。
+</para>
+</listitem>
+
+<listitem>
+<para>
+Whodo 管理员/robot 至少每天编译一次文档，并更新网站
+</para>
+<para>
+网站更新后，文档才能够在网站中出现。
+</para>
+<para>
+文档在网站的链接: <ulink url="http://www.worldhello.net/doc"/>。同时 <ulink url="http://whodo.worldhello.net/doc"/> 还存在一份拷贝，
+主要是由于 Whodo Wiki 和 WorldHello.net 分属不同主机，用户如果在 Wiki 页面中中嵌入 FreeMind 文档，只能嵌入本地文档。
+</para>
+</listitem>
+
+<listitem>
+<para>
+修改 Wiki 页面
+</para>
+<para>
+之前建立的 Wiki 页面为草稿。在提交文档到版本控制系统之后，需要更新文档中的链接。
+</para>
+<para>
+Wiki 页面中要包含 文档的作者，提交时间，文档的分类等信息。文档的分类可以是以下分类的组合：[[Category:doc]]，[[Category:db]]，[[Category:mm]]。
+</para>
+<para>
+Wiki 页面中要嵌入文档链接（使用 &lt;whodo&gt; 标签建立链接）。例如：
+</para>
+
+<screen>
+<![CDATA[
+id 和 type 属性
+# 如果提交文档的名称符合规范，可以采用 id, type 属性显示文档链接
+<whodo id="email_howto" type="html"/>
+<whodo id="docbook_howto" type="htmls"/>
+<whodo id="bug_tracking" type="htmlz"/>
+<whodo id="bcp" type="htmlsz"/>
+<whodo id="bcp" type="chmz"/>
+<whodo id="bcp" type="pdfz"/>
+<whodo id="bcp" type="rtfz"/>
+<whodo id="bcp" type="txtz"/>
+<whodo id="bcp" type="xml"/>
+<whodo id="bcp" type="svn" />
+
+# 如果文档名不符规范，可以使用 file 属性，显示文档链接
+<whodo file="docbook_howto/mindmap/docbook.mm" type="mm"/> 
+<whodo file="computer_exam/computer_exam_zyjs.mm" name="全国专业技术人员计算机应用能力考试" type="svn" text='yes'/>
+]]>
+</screen>
+</listitem>
+</itemizedlist>
 
 </sect1>
 
-<sect1 id="docs"><title>WHODO 文档列表</title>
+<sect1 id="docs"><title>Whodo 文档列表</title>
 <note>
 <para>
-更完备的文档列表，请参见 WHODO Wiki 的文档目录: <ulink url="http://whodo.worldhello.net/wiki/Category:Doc"/>
+更完备的文档列表，请参见 Whodo Wiki 的文档目录: <ulink url="http://whodo.worldhello.net/wiki/Category:Doc"/>
 </para>
 </note>
 
@@ -339,7 +527,7 @@ SVN 版本控制服务器，是作者的朋友，也是作者必需要面对的�
 <!-- whodo_docs param="list" doc="search_engine"     datefrom="2003/06/08"    title="有效沟通和知识管理 —— 搜索引擎"--><!-- /whodo_docs -->
 <!-- whodo_docs param="list" doc="svn_hooks"         datefrom="2006/04/27"    title="Subversion Hooks"--><!-- /whodo_docs -->
 <!-- whodo_docs param="list" doc="website_howto"     datefrom="2002/11/15"    title="网站管理 Howto"--><!-- /whodo_docs -->
-<!-- whodo_docs param="list" doc="whodo_howto"       datefrom="2006/04/10"    title="WHODO 计划 Howto"--><!-- /whodo_docs -->
+<!-- whodo_docs param="list" doc="whodo_howto"       datefrom="2006/04/10"    title="Whodo 计划 Howto"--><!-- /whodo_docs -->
 <!-- whodo_docs param="list" doc="wiki_howto"        datefrom="2003/07/08"    title="有效沟通和知识管理 —— Wiki"--><!-- /whodo_docs -->
 </tbody>
 </tgroup>
@@ -347,15 +535,15 @@ SVN 版本控制服务器，是作者的朋友，也是作者必需要面对的�
 
 </sect1>
 
-<sect1 id="contributors"><title>WHODO 贡献者列表</title>
+<sect1 id="contributors"><title>Whodo 贡献者列表</title>
 <para>
 参见 <ulink url="http://whodo.worldhello.net/wiki/Category:Author"/>
 </para>
 </sect1>
 
-<appendix id="worldhello"><title>WHODO 前传</title>
+<appendix id="worldhello"><title>Whodo 前传</title>
 <para>
-http://www.worldhello.net 网站诞生于 2002 年底，最早是我的个人网站，那时网站叫做 Johnson's Homepage。
+http://www.worldhello.net 网站诞生于 2002 年底，最早是我的个人网站。
 那个时候，已经有了一年多 DocBook 使用经验的我，迫不及待的想借用个人网站的形式对 DocBook 加以推广，WorldHello 就这么诞生了。
 以 DocBook 进行文档的撰写和个人的知识总结，是 WorldHello 的特色，但那个时候，往好听了说是独自耕耘，其实就是自言自语。
 </para>
@@ -366,7 +554,7 @@ http://www.worldhello.net 网站诞生于 2002 年底，最早是我的个人网
 2005年中开始筹建公司，主要方向是“开源软件”的商业支持。忽然发现仍然有很多网友关心着我渐已荒废的文档。为什么不开源呢？一方面将我荒废的文档交由感兴趣的作者继续维护，另外一方面，将 WorldHello 网站由一个个性展示的平台真正向本网站的初衷：“推广 Freemind + DocBook + CVS/SVN 的文档撰写模式，开创中文开放文档之源”迈进。
 </para>
 <para>
-如果您想看看 WHODO 计划之前的 WorldHello.net，一个用 DocBook Website 构建的网站，还可以在这里找到 <ulink url="http://jiangxin.worldhello.net">http://jiangxin.worldhello.net</ulink>。
+如果您想看看 Whodo 计划之前的 WorldHello.net，一个用 DocBook Website 构建的网站，还可以在这里找到 <ulink url="http://jiangxin.worldhello.net">http://jiangxin.worldhello.net</ulink>。
 </para>
 </appendix>
 
@@ -378,18 +566,18 @@ http://www.worldhello.net 网站诞生于 2002 年底，最早是我的个人网
 <itemizedlist>
 <listitem>
 <para>
-<ulink url="http://whodo.worldhello.net/wiki/FreeMind">WHODO Wiki 上的 FreeMind 条目</ulink>；
+<ulink url="http://whodo.worldhello.net/wiki/FreeMind">Whodo Wiki 上的 FreeMind 条目</ulink>；
 </para>
 </listitem>
 <listitem>
 <para>
-<ulink url="http://www.worldhello.net/doc/freemind/freemind.mm">《FreeMiind Hacking Howto》</ulink> （FreeMind 格式）；
+<ulink url="http://www.worldhello.net/doc/freemind/freemind.mm.htm">《FreeMiind Hacking Howto》</ulink> （FreeMind 格式）；
 </para>
 </listitem>
 </itemizedlist>
 
 <para>
-提交到 WHODO 的 Freemind 文档，需要使用 WorldHello 改进过的 Freemind。我们对 Freemind 的改进主要是便于对 Freemind 文档进行版本控制，以及更好的中文支持。
+提交到 Whodo 的 Freemind 文档，需要使用 WorldHello 改进过的 Freemind。我们对 Freemind 的改进主要是便于对 Freemind 文档进行版本控制，以及更好的中文支持。
 </para>
 <para>
 改进如下：
@@ -414,7 +602,7 @@ Freemind 0.8.0 对于 Unicode 支持也不好，存储的 .mm 文件的编码方
 如果您用过版本控制系统来维护 .mm 文件的变更，您应该会和我一样感到不便。就是没有做任何改动，只是浏览了一下思维导图，展开或者关闭了某个分支，当关闭 .mm 文件时，Freemind 就会提示您保存文件。而版本控制系统也会提示您文件修改了，需要重新 Checkin。
 </para>
 <para>
-这是因为 Freemind 把节点的展开或者收拢都记录在 .mm 文件中。这对于 WHODO 计划要将 Freemind 格式文档作为可提交的源文档的最大的挑战。
+这是因为 Freemind 把节点的展开或者收拢都记录在 .mm 文件中。这对于 Whodo 计划要将 Freemind 格式文档作为可提交的源文档的最大的挑战。
 </para>
 </listitem>
 </itemizedlist>
@@ -423,7 +611,7 @@ Freemind 0.8.0 对于 Unicode 支持也不好，存储的 .mm 文件的编码方
 我本人并非 Java 专家，只是由于 Freemind 的这些小缺点搔到了我的痒处，使得我不得不率先做了修改 Freemind 的尝试。我对 Freemind 的修改已经提交到 Freemind 的 Wiki 页面上了，参见: <ulink url="http://freemind.sourceforge.net/wiki/index.php/User:Jiangxin">http://freemind.sourceforge.net/wiki/index.php/User:Jiangxin</ulink>。
 </para>
 <para>
-FreeMind hacked 代码可以从 WHODO 网站下载，编译好的二进制文件也可以下载到。地址参见：<ulink url="http://whodo.worldhello.net/wiki/FreeMind">WHODO Wiki 上的 FreeMind 条目</ulink>；
+FreeMind hacked 代码可以从 Whodo 网站下载，编译好的二进制文件也可以下载到。地址参见：<ulink url="http://whodo.worldhello.net/wiki/FreeMind">Whodo Wiki 上的 FreeMind 条目</ulink>；
 </para>
 <warning>
 <para>
@@ -440,7 +628,7 @@ FreeMind hacked 代码可以从 WHODO 网站下载，编译好的二进制文件
 <itemizedlist>
 <listitem>
 <para>
-<ulink url="http://whodo.worldhello.net/wiki/DocBook">WHODO Wiki 上的 DocBook 条目</ulink>；
+<ulink url="http://whodo.worldhello.net/wiki/DocBook">Whodo Wiki 上的 DocBook 条目</ulink>；
 </para>
 </listitem>
 <listitem>
@@ -452,28 +640,189 @@ FreeMind hacked 代码可以从 WHODO 网站下载，编译好的二进制文件
 
 </appendix>
 
-<appendix id="svn"><title>关于 SVN 版本控制系统</title>
+<appendix id="svn"><title>访问 Whodo Subversion 版本库</title>
+<sect1><title>Whodo Subversion 版本库目录结构</title>
 <para>
-关于 SVN，可以参照：<ulink url="http://whodo.worldhello.net/wiki/SVN">WHODO Wiki 上的 SVN 条目</ulink>。
+Whodo Subversion 版本库地址: <ulink url="http://svn.worldhello.net/whodo"/>，目录格局如下：
 </para>
-</appendix>
+<itemizedlist>
+<listitem>
+<para>
+trunk/doc
+</para>
+<para>
+Whodo 文档就提交到这里。要在该目录下创建子目录。
+</para>
+<para>
+目前除了 /trunk/doc 外，其他目录暂时只读，如果需要修改其他目录，请和管理员联系
+</para>
+</listitem>
+<listitem>
+<para>
+trunk/includes
+</para>
+<para>
+样式表、DocBook 文档有关的图标、图片，FreeMind Flash 有关文件
+</para>
+</listitem>
+<listitem>
+<para>
+trunk/tools
+</para>
+<para>
+DocBook、FreeMind 格式转换的样式表，编译脚本等。
+</para>
+</listitem>
+<listitem>
+<para>
+jiangxin.worldhello.net
+</para>
+<para>
+一个 DocBook Website 站点示例。
+</para>
+</listitem>
+</itemizedlist>
+</sect1>
 
-<appendix id="bugs"><title>关于 问题报告系统</title>
+<sect1><title>新增文件的属性设置</title>
 <para>
-关于问题报告系统，访问：<ulink url="http://whodo.worldhello.net/bugs">这里</ulink>。
+Whodo SVN 的 Hooks 脚本会检查新增文件的属性，没有设置 svn:mime-type 和/或 svn:eol-style 属性，禁止提交。
 </para>
-</appendix>
+<para>
+但是每次添加文件后，还要执行类似“svn ps svn:eol-style ...”的命令，实在太繁琐了！
+不过幸好，SVN 客户端（命令行或者 TortoiseSVN），支持自动属性的功能。即会为新增文件自动添加属性。
+</para>
+<para>
+启用和设置自动属性，是在 config 配置文件中完成的。 config 配置文件的位置：
+</para>
 
-<appendix id="wiki"><title>关于 WHODO Wiki</title>
+<itemizedlist>
+<listitem>
 <para>
-关于 Wiki，可以参照：<ulink url="http://whodo.worldhello.net/wiki/Help:Contents">WHODO Wiki 上的帮助系统</ulink>。
+Unix 平台
 </para>
-</appendix>
+<para>
+全局的配置文件位置为：/etc/subversion/config；
+</para>
+<para>
+每个用户主目录还有配置文件覆盖全局配置文件的设置：~/.subversion/config；
+</para>
+</listitem>
+<listitem>
+<para>
+Windows 平台
+</para>
+<para>
+注册表中可能包含相应的设置：HKLM\Software\Tigris.org\Subversion\Config，以及 HKCU\Software\Tigris.org\Subversion\Config。
+</para>
+<para>
+不过文件的优先级更高。全局配置文件：%ALLUSERSPROFILE%\Application Data\Subversion\config，用户个人配置文件：%APPDATA%\Subversion\config
+</para>
+</listitem>
+</itemizedlist>
 
-<appendix id="forum"><title>关于 WHODO 论坛</title>
 <para>
-关于 WHODO 论坛，访问：<ulink url="http://whodo.worldhello.net/forum">这里</ulink>。
+修改 config 配置文件，启用 auto-props：
 </para>
+<screen>
+<![CDATA[
+[miscellany]
+enable-auto-props = yes
+]]>
+</screen>
+<para>
+自动属性的设置，是根据文件名来匹配的。修改 config 文件，增添新的配置，如下：
+</para>
+<screen>
+<![CDATA[
+### Section for configuring automatic properties.
+[auto-props]
+### The format of the entries is:
+###   file-name-pattern = propname[=value][;propname[=value]...]
+### The file-name-pattern can contain wildcards (such as '*' and
+### '?').  All entries which match will be applied to the file.
+### Note that auto-props functionality must be enabled, which
+### is typically done by setting the 'enable-auto-props' option.
+
+##################################################
+### Binary files
+##################################################
+*.bmp	= svn:mime-type=image/bmp
+*.gif	= svn:mime-type=image/gif
+*.gz	= svn:mime-type=application/x-gzip
+*.ico	= svn:mime-type=image/x-icon
+*.jar	= svn:mime-type=application/zip
+*.jpg	= svn:mime-type=image/jpeg
+*.pdf	= svn:mime-type=application/pdf
+*.png	= svn:mime-type=image/png
+*.ps	= svn:mime-type=application/postscript
+*.tif	= svn:mime-type=image/tiff
+*.vsd	= svn:mime-type=application/octet-stream
+*.zip	= svn:mime-type=application/zip
+
+##################################################
+### Text files, OS dependent eol-style
+##################################################
+*.dsp	= svn:eol-style=CRLF
+*.dsw	= svn:eol-style=CRLF
+
+*.mm	= svn:eol-style=LF;svn:mime-type=text/xml
+*.sh	= svn:eol-style=LF;svn:executable
+Makefile	= svn:eol-style=LF
+
+##################################################
+### Text files, eol-style is native
+##################################################
+*.c		= svn:eol-style=native;svn:mime-type=text/plain
+*.cpp	= svn:eol-style=native;svn:mime-type=text/plain
+*.css	= svn:eol-style=native;svn:mime-type=text/css
+*.diff	= svn:eol-style=native;svn:mime-type=text/plain
+*.dsl	= svn:eol-style=native;svn:mime-type=text/sgml
+*.dtd	= svn:eol-style=native;svn:mime-type=text/plain
+*.ent	= svn:eol-style=native;svn:mime-type=text/plain
+*.gml	= svn:eol-style=native;svn:mime-type=text/sgml
+*.h		= svn:eol-style=native;svn:mime-type=text/plain
+*.htm	= svn:eol-style=native;svn:mime-type=text/html
+*.html	= svn:eol-style=native;svn:mime-type=text/html
+*.java	= svn:eol-style=native;svn:mime-type=text/plain
+*.js	= svn:eol-style=native;svn:mime-type=text/plain
+*.mod	= svn:eol-style=native;svn:mime-type=text/plain
+*.patch	= svn:eol-style=native;svn:mime-type=text/plain
+*.php	= svn:eol-style=native
+*.pl	= svn:eol-style=native
+*.py	= svn:eol-style=native
+*.sgm	= svn:eol-style=native;svn:mime-type=text/sgml
+*.sgml	= svn:eol-style=native;svn:mime-type=text/sgml
+*.svg	= svn:eol-style=native;svn:mime-type=text/xml
+*.txt	= svn:mime-type=text/plain
+*.xml	= svn:eol-style=native;svn:mime-type=text/xml
+*.xsl	= svn:eol-style=native;svn:mime-type=text/xml
+*.xslt	= svn:eol-style=native;svn:mime-type=text/xml
+README	= svn:eol-style=native
+]]>
+</screen>
+
+<para>
+文件添加后，在提交之前，可以通过如下命令查看新增文件的属性：
+</para>
+<screen>
+<![CDATA[
+$ svn proplist -v *
+]]>
+</screen>
+</sect1>
+
+<sect1><title>撰写 Commit Log</title>
+<para>
+Whodo SVN 要求提交对书写 Commit Log。目前的检查，仅仅限于长度检查。Commit Log 的长度要大于 5 个字节，否则会触发 subversion hooks，导致提交被退回。
+</para>
+</sect1>
+
+<sect1><title>SVN 客户端</title>
+<para>
+对于 Windows 平台，我们推荐使用 TortoiseSVN。我们还推荐安装 Cygwin，并使用 Cygwin 提供的 svn 命令行客户端。
+</para>
+</sect1>
 
 </appendix>
 

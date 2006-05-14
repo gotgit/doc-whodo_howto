@@ -8,7 +8,7 @@
 <node ID="Freemind_Link_1644624127" 
 	TEXT="Whodo 不是 Solaris 上的 whodo 命令，而是一个中文开放文档计划。"/>
 <node ID="Freemind_Link_173292206" 
-	TEXT="Whodo，可以看作是“WorldHello Open Document Origin ”，即 “WorldHello 开放文档之源” 的缩写。&#xa;是使用 Freemind + DocBook + SVN 进行技术文档撰写的开放平台，这里的所有文档遵从GNU 的自由文档许可证(Free Document License)的条款，人人皆可提交更改。"/>
+	TEXT="Whodo 是“WorldHello Open Document Origin ”，即 “WorldHello 开放文档之源” 的缩写。&#xa;是使用 Freemind + DocBook + Wiki + SVN 进行技术文档撰写的开放平台，这里的所有文档遵从GNU 的自由文档许可证(Free Document License)的条款，人人皆可提交更改。"/>
 <node ID="Freemind_Link_1178194788" 
 	TEXT="WHODO = Freemind + DocBook + Wiki + Subversion"/>
 </node>
@@ -112,6 +112,11 @@
 	TEXT="参见： http://whodo.worldhello.net/wiki/DocBook"/>
 </node>
 </node>
+<node FOLDED="true" ID="Freemind_Link_206098046" POSITION="right" 
+	TEXT="Whodo 工作流程">
+<node ID="Freemind_Link_1565755613" 
+	TEXT="&lt;html&gt;&#xa;&lt;h2&gt;图示&lt;/h2&gt;&#xa;&lt;pre&gt;&#xa;     | &lt;--- [ Freemind ] &lt;---- *.mm          &lt;--下载-- |               | &lt;--------------------------- |     |&#xa;读者 |                                              | WHODO Website |                             | SVN |&#xa;     |                         *.html, *.chm        |               |                             |     |&#xa;     | &lt;--- [ IE, Word ] &lt;---- *.pdf,  *.rtf &lt;--下载-- |               | &lt;--- [ DocBook 编译系统 ] -- |     |&#xa;     |                         *.txt&#xa;     &#xa;     | &lt;--&gt; [ Freemind* ] &lt;----------------------&gt; *.mm  &lt;----&gt; |     |&#xa;作者 |                                                       | SVN |&#xa;     | &lt;--&gt; [ Notepad, Ultraedit, Eclipse...] &lt;--&gt; *.xml &lt;----&gt; |     |&#xa;     |                      &#xa;&lt;/pre&gt;"/>
+</node>
 <node FOLDED="true" ID="Freemind_Link_683054111" POSITION="right" 
 	TEXT="如何参与 Whodo？">
 <node ID="Freemind_Link_24001140" 
@@ -146,9 +151,9 @@
 	TEXT="论坛地址: http://whodo.worldhello.net/forum"/>
 </node>
 <node FOLDED="true" ID="Freemind_Link_589177598" 
-	TEXT="通过问题报告反馈">
+	TEXT="通过问题追踪系统反馈">
 <node ID="Freemind_Link_304884763" 
-	TEXT="问题报告系统网址: http://whodo.worldhello.net/bugs"/>
+	TEXT="问题追踪系统网址: http://whodo.worldhello.net/bugs"/>
 <node ID="Freemind_Link_1807482865" 
 	TEXT="当您发现文档中的纰漏或者不足，您可以到问题报告系统上来，提交一个针对该文档的问题报告。"/>
 <node ID="Freemind_Link_1929880754" 
@@ -201,6 +206,8 @@
 	TEXT="在页面最前面插入模板： {{草稿}}">
 <node 
 	TEXT="模板{{草稿}}，会自动将文档归于 Doc 和草稿分类，并有醒目标识，提醒管理员注意有新用户提交新文档。"/>
+<node ID="Freemind_Link_952113423" LINK="http://whodo.worldhello.net/wiki/Curl_howto" 
+	TEXT="如： http://whodo.worldhello.net/wiki/Curl_howto"/>
 </node>
 </node>
 <node FOLDED="true" ID="Freemind_Link_333471908" 
@@ -471,11 +478,6 @@
 <node ID="Freemind_Link_1888663727" 
 	TEXT="Windows 用户推荐使用 TortoiseSVN 。"/>
 </node>
-</node>
-<node FOLDED="true" ID="Freemind_Link_206098046" 
-	TEXT="Whodo 系统架构">
-<node ID="Freemind_Link_1565755613" 
-	TEXT="&lt;html&gt;&#xa;&lt;h2&gt;图示&lt;/h2&gt;&#xa;&lt;pre&gt;&#xa;     | &lt;--- [ Freemind ] &lt;---- *.mm          &lt;--下载-- |               | &lt;--------------------------- |     |&#xa;读者 |                                              | WHODO Website |                             | SVN |&#xa;     |                         *.html, *.chm        |               |                             |     |&#xa;     | &lt;--- [ IE, Word ] &lt;---- *.pdf,  *.rtf &lt;--下载-- |               | &lt;--- [ DocBook 编译系统 ] -- |     |&#xa;     |                         *.txt&#xa;     &#xa;     | &lt;--&gt; [ Freemind* ] &lt;----------------------&gt; *.mm  &lt;----&gt; |     |&#xa;作者 |                                                       | SVN |&#xa;     | &lt;--&gt; [ Notepad, Ultraedit, Eclipse...] &lt;--&gt; *.xml &lt;----&gt; |     |&#xa;     |                      &#xa;&lt;/pre&gt;"/>
 </node>
 </node>
 </node>
