@@ -430,7 +430,7 @@ Whodo Wiki 的 Bug Tracking 系统 的网址为: <ulink url="http://whodo.worldh
 用 subversion 账号提交文档
 </para>
 <para>
-一旦收到管理员提供的 subversion 账户信息后，就可以提交文档。Whodo 文档提交到 Whodo subversion 路径： http://svn.worldhello.net/whodo/trunk/doc 的子目录下。
+一旦收到管理员提供的 subversion 账户信息后，就可以提交文档。Whodo 文档提交到 Whodo subversion 路径： http://svn.worldhello.net/svn/whodo/trunk/doc 的子目录下。
 DocBook 格式文档的首页文档名为 index.xml；FreeMind 文档的文件名和子目录名同名，扩展名为 .mm。
 </para>
 <para>
@@ -643,7 +643,7 @@ FreeMind hacked 代码可以从 Whodo 网站下载，编译好的二进制文件
 <appendix id="svn"><title>访问 Whodo Subversion 版本库</title>
 <sect1><title>Whodo Subversion 版本库目录结构</title>
 <para>
-Whodo Subversion 版本库地址: <ulink url="http://svn.worldhello.net/whodo"/>，目录格局如下：
+Whodo Subversion 版本库地址: <ulink url="http://svn.worldhello.net/svn/whodo"/>，目录格局如下：
 </para>
 <itemizedlist>
 <listitem>

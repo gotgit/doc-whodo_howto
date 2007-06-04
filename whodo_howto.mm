@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="0.8.0">
-<!-- This .mm file is CVS/SVN friendly, also has better Chinese character support. Contribute by http://www.WorldHello.net, orignal FreeMind can be found at http://freemind.sourceforge.net -->
+<map version="0.9.0_Beta_8">
+<!-- This file is saved using a hacked version of FreeMind. visit: http://www.worldhello.net, http://ossxp.com -->
+<!-- Orignal FreeMind, can download from http://freemind.sourceforge.net -->
+<!-- This .mm file is CVS/SVN friendly, some atts are saved in .mmx file.(by Worldhello.net) -->
 <node COLOR="#990033" ID="Freemind_Link_1738528425" 
 	TEXT="Whodo Howto">
 <font BOLD="true" NAME="SansSerif" SIZE="13"/>
@@ -115,8 +117,17 @@
 </node>
 <node FOLDED="true" ID="Freemind_Link_206098046" POSITION="right" STYLE="bubble" 
 	TEXT="Whodo 工作流程">
-<node ID="Freemind_Link_1816335897" 
-	TEXT="&lt;html&gt;&lt;img src=&quot;images/process.png&quot;&gt;"/>
+<node ID="Freemind_Link_1816335897">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="images/process.png" />
+  </body>
+</html>
+</richcontent>
+</node>
 </node>
 <node FOLDED="true" ID="Freemind_Link_683054111" POSITION="right" STYLE="bubble" 
 	TEXT="如何参与 Whodo？">
@@ -224,7 +235,7 @@
 <node ID="Freemind_Link_1863743156" 
 	TEXT="一旦收到管理员提供的 subversion 账户信息后，就可以提交文档"/>
 <node ID="Freemind_Link_831297785" 
-	TEXT="Whodo 文档提交到 Whodo subversion 路径： http://svn.worldhello.net/whodo/trunk/doc 的子目录下。"/>
+	TEXT="Whodo 文档提交到 Whodo subversion 路径： http://svn.worldhello.net/svn/whodo/trunk/doc 的子目录下。"/>
 <node ID="Freemind_Link_1776854762" 
 	TEXT="提交文档，要设定文件的 svn:mime-type 或者 svn:eol-style 属性，还要写 commit log，否则会触发 subversion hooks，导致提交被退回。具体参见附录关于 SVN 的说明"/>
 <node ID="Freemind_Link_175159155" 
@@ -234,7 +245,7 @@
 <node FOLDED="true" ID="Freemind_Link_1829259375" 
 	TEXT="创建子目录">
 <node ID="Freemind_Link_35246687" 
-	TEXT="在 subversion 的 http://svn.worldhello.net/whodo/trunk/doc 路径下创建子目录"/>
+	TEXT="在 subversion 的 http://svn.worldhello.net/svn/whodo/trunk/doc 路径下创建子目录"/>
 <node ID="Freemind_Link_1471890737" 
 	TEXT="子目录名称使用英文名称"/>
 <node ID="Freemind_Link_1784051557" 
@@ -401,11 +412,11 @@
 <node FOLDED="true" ID="Freemind_Link_1856824852" 
 	TEXT="Whodo Subversion 版本库访问">
 <node ID="Freemind_Link_383094301" 
-	TEXT="http://svn.worldhello.net/whodo/"/>
+	TEXT="http://svn.worldhello.net/svn/whodo/"/>
 <node ID="Freemind_Link_1208461729" 
-	TEXT="svn ls http://svn.worldhello.net/whodo/"/>
+	TEXT="svn ls http://svn.worldhello.net/svn/whodo/"/>
 <node ID="Freemind_Link_435494851" 
-	TEXT="svn checkout http://svn.worldhello.net/whodo/trunk  localdir"/>
+	TEXT="svn checkout http://svn.worldhello.net/svn/whodo/trunk  localdir"/>
 </node>
 <node FOLDED="true" ID="Freemind_Link_1615776215" 
 	TEXT="Whodo Subversion 版本库目录结构 ">
