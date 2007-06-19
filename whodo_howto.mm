@@ -18,7 +18,7 @@
       <font size="5">Whodo Howto </font>
     </p>
     <p style="text-align: center">
-      <font size="2">(&#29256;&#26412;&#21495;: 0.3.F-$Rev$)</font>
+      <font size="2">(版本号: 0.3.F-$Rev$)</font>
     </p>
   </body>
 </html>
@@ -30,8 +30,53 @@
 	TEXT="Whodo 不是 Solaris 上的 whodo 命令，而是一个中文开放文档计划。"/>
 <node ID="Freemind_Link_173292206" 
 	TEXT="Whodo 是“WorldHello Open Document Origin ”，即 “WorldHello 开放文档之源” 的缩写。&#xa;是使用 Freemind + DocBook + Wiki + SVN 进行技术文档撰写的开放平台，这里的所有文档遵从GNU 的自由文档许可证(Free Document License)的条款，人人皆可提交更改。"/>
-<node ID="Freemind_Link_1178194788" 
-	TEXT="WHODO = Freemind + DocBook + Wiki + Subversion"/>
+<node FOLDED="true" ID="Freemind_Link_1178194788" 
+	TEXT="WHODO = Freemind + DocBook + Wiki + Subversion">
+<node FOLDED="true" ID="Freemind_Link_1754209837" 
+	TEXT="FreeMind 特色">
+<node ID="Freemind_Link_1796988518" 
+	TEXT="组织结构符合人的思维习惯；"/>
+<node ID="Freemind_Link_1054572351" 
+	TEXT="便于信息的整理和重组；"/>
+</node>
+<node FOLDED="true" ID="Freemind_Link_1441160087" 
+	TEXT="DocBook 特色">
+<node ID="Freemind_Link_24615660" 
+	TEXT="DocBook 的输出格式多样；"/>
+<node ID="Freemind_Link_819025193" 
+	TEXT="DocBook 用于详尽阐述，图文并茂；"/>
+</node>
+</node>
+<node FOLDED="true" ID="Freemind_Link_352359152" 
+	TEXT="Whodo 文档的几种存在模式">
+<node 
+	TEXT="FreeMind Only"/>
+<node 
+	TEXT="DocBook Only"/>
+<node 
+	TEXT="FreeMind + DocBook"/>
+</node>
+<node FOLDED="true" ID="Freemind_Link_140699578" 
+	TEXT="Whodo 文档的版本控制">
+<node ID="Freemind_Link_719460793" 
+	TEXT="一个主控文档： FreeMind/DocBook/Wiki 的代号分别为 F/D/W。"/>
+<node ID="Freemind_Link_1269220354" 
+	TEXT="版本号格式为：  &lt;主版本号&gt;.&lt;副版本号&gt;.&lt;主控文档标志&gt;-&lt;主控文档修订号&gt;.&lt;文档修订号&gt; &#xa; 1. 主控文档有 &lt;主控文档修订号&gt;没有 &lt;文档修订号&gt; ； &#xa; 2. &lt;主控文档标志&gt; 可以为 F,D,W，分别代表 FreeMind, DocBook, Wiki； &#xa; 3. 其他文档用 &lt;文档修订号&gt; 来版本控制。一旦将修改合并到主控文档，则归零； &#xa; 4. 主控文档的版本号不小于其他附属文档的版本号。"/>
+</node>
+<node FOLDED="true" ID="Freemind_Link_1671771974" 
+	TEXT="Whodo 是”北京群英汇信息技术有限公司“支持的，是”群英汇“的知识管理系统的展示。">
+<icon BUILTIN="ksmiletris"/>
+<node FOLDED="true" ID="Freemind_Link_1889246670" 
+	TEXT="北京群英汇信息技术有限公司：">
+<icon BUILTIN="forward"/>
+<node ID="Freemind_Link_611700593" LINK="http://www.ossxp.com" 
+	TEXT="http://www.ossxp.com"/>
+<node ID="Freemind_Link_848456031" LINK="http://www.OpenSourceXpress.com" 
+	TEXT="http://www.OpenSourceXpress.com"/>
+</node>
+<node ID="Freemind_Link_612747561" 
+	TEXT="采用开放格式进行文档管理和知识管理系统搭建，请联系”群英汇“。"/>
+</node>
 </node>
 <node FOLDED="true" ID="Freemind_Link_1263641711" POSITION="right" STYLE="bubble" 
 	TEXT="Wiki 难道不够么？">
@@ -39,12 +84,21 @@
 	TEXT="Wiki 又作维客，是协同著作的伟大实践。Wiki 可以作为团队的知识库支撑系统，例如 WHODO 就用 Wiki 技术进行主页的搭建。"/>
 <node ID="Freemind_Link_1155624865" 
 	TEXT="难道 Wiki 不够么，还要使用 DocBook、Freemind 么？简单的回答就是，Wiki 的文档，不能够本地修改和阅读，必须要在线才能浏览和编辑。"/>
+<node FOLDED="true" ID="Freemind_Link_1686500000" 
+	TEXT="在线编辑，受带宽限制。">
+<node ID="Freemind_Link_618925183" 
+	TEXT="慢"/>
+<node ID="Freemind_Link_531627092" 
+	TEXT="不可离线编辑"/>
+</node>
+<node ID="Freemind_Link_1383566363" 
+	TEXT="文档的本地拷贝，可以抗拒服务器断线以及消失的风险。  例如： &#xa; * wikipedia.com 网络大百科自 2006 以来惨遭封锁； &#xa; * worldhello.net 网站最早在 bluehost.com 托管，由于 bluehost.com 遭封锁而断线；"/>
+<node ID="Freemind_Link_1650119747" 
+	TEXT="文档有了属主，个人更有成就感"/>
 <node ID="Freemind_Link_386104319" 
-	TEXT="有这么一个比喻，当你的网络出现故障，一、你记得访问过某个 Wiki 网站，其中有关于网络故障诊断的详细资料；二、有一个 DocBook 撰写的网络故障诊断的电子书你看过并保存在硬盘中。&#xa;第一种情况显然是远水救不了近火，网络故障都上不了网，何谈 Wiki。&#xa;因此，DocBook 和 FreeMind 技术能够撰写出可本地浏览，可打印的，有作者署名的电子文档，是 Wiki 不可替代的。"/>
-<node ID="Freemind_Link_628890706" 
-	TEXT="不过 Whodo 中 Wiki 也是重要一环，因为 Wiki 用来构建文档的索引、链接、归类，便于搜索引擎的检索。"/>
-<node FOLDED="true" ID="Freemind_Link_512211758" 
-	TEXT="例如">
+	TEXT="举个例子，当你的网络出现故障，需要求助时： &#xa;一、你记得访问过某个 Wiki 网站，其中有关于网络故障如何诊断文章； &#xa;二、有一个 DocBook/FreeMind 撰写的网络故障诊断的电子书，并且就在硬盘中。&#xa;第一种情况显然是远水救不了近火，网络故障都上不了网，何谈访问 Wiki 页面。&#xa;DocBook 和 FreeMind 技术能够撰写出可本地浏览，可打印的，有作者署名的电子文档，是 Wiki 不可替代的。"/>
+<node FOLDED="true" ID="Freemind_Link_628890706" 
+	TEXT="不过 Whodo 中 Wiki 也是重要一环，因为 Wiki 用来构建文档的索引、链接、归类，便于搜索引擎的检索。">
 <node ID="Freemind_Link_928606254" 
 	TEXT="每一篇文章，都有一个 Wiki 页面与之对应；"/>
 <node FOLDED="true" ID="Freemind_Link_1135482731" 
@@ -109,7 +163,7 @@
 <node FOLDED="true" ID="Freemind_Link_241492750" 
 	TEXT="如何修改 subversion 用户账号？">
 <node ID="Freemind_Link_1577381031" 
-	TEXT="在账号整合之前，用 htpasswd -nm 创建口令，将加密口令传给管理员即可"/>
+	TEXT="在账号整合之前，可以用 cgi 自行更改口令。"/>
 </node>
 <node ID="Freemind_Link_1055499286" LINK="http://svn.worldhello.net" 
 	TEXT="地址： http://svn.worldhello.net"/>
@@ -362,8 +416,20 @@
 	TEXT="具体参照其他文档的 Wiki 页面"/>
 </node>
 </node>
+<node FOLDED="true" ID="Freemind_Link_1743143715" POSITION="right" STYLE="bubble" 
+	TEXT="WHODO 文档列表">
+<node ID="Freemind_Link_1933636883" LINK="http://whodo.worldhello.net/wiki/Category:Doc" 
+	TEXT="Wiki 的 doc 分类：http://whodo.worldhello.net/wiki/Category:Doc"/>
+<node ID="Freemind_Link_1742916729" LINK="http://www.worldhello.net/doc/docs.html" 
+	TEXT="http://www.worldhello.net/doc/docs.html"/>
+</node>
+<node FOLDED="true" ID="Freemind_Link_1040339879" POSITION="right" STYLE="bubble" 
+	TEXT="WHODO 贡献者列表">
+<node ID="Freemind_Link_301088751" LINK="http://whodo.worldhello.net/wiki/Category:Author" 
+	TEXT="Wiki 的 author 列表：http://whodo.worldhello.net/wiki/Category:Author"/>
+</node>
 <node FOLDED="true" ID="Freemind_Link_530640213" POSITION="right" STYLE="bubble" 
-	TEXT="关注 Whodo 的安全">
+	TEXT="题外话： 关注 Whodo 的安全">
 <node FOLDED="true" ID="Freemind_Link_1781193737" 
 	TEXT="文档质量标准">
 <node ID="Freemind_Link_1611969907" 
@@ -381,21 +447,10 @@
 	TEXT="一旦发现用户提交垃圾数据或者破坏他人文章的行为，管理员有权封锁直至删除该用户账号"/>
 </node>
 </node>
-<node FOLDED="true" ID="Freemind_Link_1743143715" POSITION="right" STYLE="bubble" 
-	TEXT="WHODO 文档列表">
-<node ID="Freemind_Link_1933636883" LINK="http://whodo.worldhello.net/wiki/Category:Doc" 
-	TEXT="Wiki 的 doc 分类：http://whodo.worldhello.net/wiki/Category:Doc"/>
-<node ID="Freemind_Link_1742916729" LINK="http://www.worldhello.net/doc/docs.html" 
-	TEXT="http://www.worldhello.net/doc/docs.html"/>
-</node>
-<node FOLDED="true" ID="Freemind_Link_1040339879" POSITION="right" STYLE="bubble" 
-	TEXT="WHODO 贡献者列表">
-<node ID="Freemind_Link_301088751" LINK="http://whodo.worldhello.net/wiki/Category:Author" 
-	TEXT="Wiki 的 author 列表：http://whodo.worldhello.net/wiki/Category:Author"/>
-</node>
 <node FOLDED="true" ID="Freemind_Link_1870376841" POSITION="left" STYLE="bubble" 
 	TEXT="附录">
 <cloud COLOR="#ccffcc"/>
+<icon BUILTIN="pencil"/>
 <node FOLDED="true" ID="Freemind_Link_191946185" 
 	TEXT="WHODO 历史">
 <node ID="Freemind_Link_938636007" 
@@ -405,7 +460,7 @@
 <node ID="Freemind_Link_1917804181" 
 	TEXT="2004 年开始接触到 MindMap，直到后来发现了 Freemind 这个伟大的处理“思维导图”的开源软件，我的个人文档撰写和知识积累的习惯再一次被颠覆了。"/>
 <node ID="Freemind_Link_1869277930" 
-	TEXT="2005年中开始筹建公司，主要方向是“开源软件”的商业支持。忽然发现仍然有很多网友关心着我渐已荒废的 文档。为什么不开源呢？一方面将我荒废的文档交由感兴趣的作者继续，另外一方面，推广 Freemind + DocBook + Wiki + SVN 的文档撰写模式呢？"/>
+	TEXT="2005年中开始筹建公司，主要方向是“开源软件”的商业支持。忽然发现仍然有很多网友关心着我渐已荒废的 文档。为什么不开源呢？一方面将我荒废的文档交由感兴趣的作者继续，另外一方面，推广 Freemind + DocBook + Wiki + SVN 的文档管理、知识管理平台呢？"/>
 </node>
 <node FOLDED="true" ID="Freemind_Link_1875149244" 
 	TEXT="Freemind (WorldHello Edition)">
@@ -413,8 +468,6 @@
 	TEXT="UTF-8 以及更好的中文支持"/>
 <node ID="Freemind_Link_1327871183" 
 	TEXT="版本控制优化"/>
-<node ID="Freemind_Link_1067041278" 
-	TEXT=".mmx 文件和 .mm 合并算法需要优化"/>
 <node ID="Freemind_Link_1811271933" 
 	TEXT="参见 jiangxin@Freemind"/>
 </node>
@@ -510,7 +563,7 @@
 <node ID="Freemind_Link_1888663727" 
 	TEXT="Windows 用户推荐使用 TortoiseSVN 。"/>
 <node ID="Freemind_Link_1835240616" 
-	TEXT="Windows 安装 Cygwin，提供更强大命令行支持，包括 svn 命令行客户端。"/>
+	TEXT="Windows 安装 Cygwin，提供更强大命令行支持，不过最好使用官方发行的  Windows 平台下的 subversion命令行。"/>
 </node>
 </node>
 </node>
