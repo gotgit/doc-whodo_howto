@@ -485,7 +485,7 @@ id 和 type 属性
 
 # 如果文档名不符规范，可以使用 file 属性，显示文档链接
 <whodo file="docbook_howto/mindmap/docbook.mm" type="mm"/> 
-<whodo file="computer_exam/computer_exam_zyjs.mm" name="全国专业技术人员计算机应用能力考试" type="svn" text='yes'/>
+<whodo file="计算机应用能力考试/index.mm" name="全国专业技术人员计算机应用能力考试" type="svn" text='yes'/>
 ]]>
 </screen>
 </listitem>
@@ -512,7 +512,7 @@ id 和 type 属性
 <!-- whodo_docs param="list" doc="cvs_vs_starteam"   datefrom="2002/01/08"    title="版本控制：CVS vs. Starteam"--><!-- /whodo_docs -->
 <!-- whodo_docs param="list" doc="dns_howto"         datefrom="2003/01/22"    title="DNS Howto"--><!-- /whodo_docs -->
 <!-- whodo_docs param="list" doc="docbook_howto"     datefrom="2002/09/18"    title="文档的技术革命 —— DocBook"       mmindex="mindmap/docbook.mm" --><!-- /whodo_docs -->
-<!-- whodo_docs param="list" doc="computer_exam"     datefrom="2006/05/03"    title="全国专业技术人员计算机应用能力考试" mmindex="computer_exam_zyjs.mm" --><!-- /whodo_docs -->
+<!-- whodo_docs param="list" doc="计算机应用能力考试"     datefrom="2006/05/03"    title="全国专业技术人员计算机应用能力考试" mmindex="index.mm" --><!-- /whodo_docs -->
 <!-- whodo_docs param="list" doc="email_howto"       datefrom="2003/02/11"    title="有效沟通和知识管理 —— Email"--><!-- /whodo_docs -->
 <!-- whodo_docs param="list" doc="freemind"          datefrom="2006/04/17"    title="FreeMind Hacking Howto"--><!-- /whodo_docs -->
 <!-- whodo_docs param="list" doc="health"            datefrom="2003/01/29"    title="摘抄：健康指南"--><!-- /whodo_docs -->
