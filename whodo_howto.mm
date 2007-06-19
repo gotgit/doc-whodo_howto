@@ -123,7 +123,7 @@
     
   </head>
   <body>
-    <img src="images/process.png" />
+    <img src="images/process.png"/>
   </body>
 </html>
 </richcontent>
