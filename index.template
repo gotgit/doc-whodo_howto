@@ -31,7 +31,7 @@ IT 技术文档，几乎都源自英文。中文技术文档也多源自于翻�
 Whodo 项目的宗旨是中文用户自己的开放文档计划。随着越来越多华人开发者对开源项目的参与甚至是华人主导的开源项目，华人开发者不应该沦为英译汉的配角，用我们自己的文字，书写我们署名的传世之作！ 
 </para>
 <para>
-（编译自版本: &doc.revision;，最后更新时间: &doc.lastchange;）
+（版本号: 0.3.F-66.&doc.revision;，最后更新时间: &doc.lastchange;）
 </para>
 </abstract>
 </articleinfo>
@@ -43,6 +43,8 @@ Whodo 不是 Solaris 上的 whodo 命令，而是一个中文开放文档计划�
 <para>
 Whodo 是“WorldHello Open Document Origin ”，即 “WorldHello 开放文档之源” 的缩写。是使用 Freemind + DocBook + Wiki + SVN 进行技术文档撰写的开放平台，这里的所有文档遵从 GPL，人人皆可提交更改。
 </para>
+
+<sect2><title>Whodo = Freemind + DocBook + Wiki + Subversion</title>
 <para>
 很多人都知道大名鼎鼎的 <ulink url="http://www.tldp.org">TLDP</ulink>。就像 TLDP 项目采用 DocBook 作为协同著作的文本格式，Whodo 项目除了采用 DocBook 格式之外，还使用 FreeMind 的文档格式。即：Whodo = Freemind + DocBook + Wiki + Subversion.
 </para>
@@ -74,21 +76,19 @@ Subversion 版本控制系统，是 Whodo 数据交换的中心，是帮助实�
 </listitem>
 </itemizedlist>
 
-<sect2><title>FreeMind 的优势</title>
+<sect3><title>FreeMind 的特点</title>
 <itemizedlist>
 <listitem>
 <para>
-所见即所得的编辑方式； 
+组织结构符合人的思维习惯
+</para>
+<para>
+有人拿 FreeMind 的智图格式和人脑神经元模型做对比，得出此结论。
 </para>
 </listitem>
 <listitem>
 <para>
-输出的文档格式为 XML，适合于版本控制（Whodo Hacked Edition）； 
-</para>
-</listitem>
-<listitem>
-<para>
-文章结构便于梳理，只需要鼠标拖动即可； 
+便于信息的整理和重组
 </para>
 </listitem>
 <listitem>
@@ -97,24 +97,25 @@ Subversion 版本控制系统，是 Whodo 数据交换的中心，是帮助实�
 </para>
 </listitem>
 </itemizedlist>
-</sect2>
+</sect3>
 
-<sect2><title>FreeMind 相比 DocBook 的不足</title>
+<sect3><title>DocBook 的特色</title>
 <itemizedlist>
 <listitem>
 <para>
-FreeMind 的输出格式单一，难以形成印刷版本，而 DocBook 的输出格式多样； 
+DocBook 的输出格式多样；
 </para>
 </listitem>
 <listitem>
 <para>
-FreeMind 是提纲挈领，DocBook 是详尽阐述； 
+相比 FreeMind 一般用于提纲挈领，DocBook 则可以详尽阐述，图文并茂；
 </para>
 </listitem>
 </itemizedlist>
+</sect3>
 </sect2>
 
-<sect2><title>Whodo 文档的三种存在模式</title>
+<sect2><title>Whodo 文档的几种存在模式</title>
 <itemizedlist>
 <listitem>
 <para>
@@ -142,56 +143,101 @@ FreeMind 和 DocBook 互为补充，FreeMind 作纲梳理结构，DocBook 完善
 <para>
 可以让不习惯 DocBook 的用户，和只用 DocBook 的用户，同样参与到文档撰写中来； 
 </para>
+</listitem>
+</itemizedlist>
+</sect2>
+
+<sect2><title>Whodo 文档的版本控制</title>
+<itemizedlist>
+<listitem>
 <para>
-版本号管理：三位版本号: x.x.x。
-前两位代表 FreeMind 和 DocBook 的文章的结构同步关系； 第三位版本号代表各自的修改，同步之后第二位版本号加一，第三位归零。 
+主控文档： FreeMind, DocBook, Wiki 其中一种格式的文档作为主控文档，其他文档的内容随主控文档更新。
+</para>
+<para>
+要能够在版本号中体现出主控文档。我们要求在版本号中插入一个主控文档的代号。FreeMind/DocBook/Wiki 的代号分别为 F/D/W。
+</para>
+</listitem>
+<listitem>
+<para>
+版本号格式为：  &lt;主版本号&gt;.&lt;副版本号&gt;.&lt;主控文档标志&gt;-&lt;主控文档修订号&gt;.&lt;本文档修订号&gt;
 </para>
 </listitem>
 </itemizedlist>
 </sect2>
 
+<sect2><title>群英汇-开源速递</title>
+<para>
+Whodo 是 “<ulink url="http://www.OpenSourceXpress.com">北京群英汇信息技术有限公司</ulink>” 支持的项目。也是“群英汇”的“知识管理系统”的展示平台。
+</para>
+<para>
+如果您想要采用 WHODO 的平台架构来搭建公司的文档管理和知识管理平台，请联系“<ulink url="http://www.ossxp.com">群英汇</ulink>”，将 WHODO 搬回家。
+</para>
+</sect2>
 </sect1>
 
 <sect1 id="whynotwiki"><title>Wiki 难道不够么？</title>
 <para>
-Wiki 又作维客，是协同著作的伟大实践。可以作为团队的知识库支撑系统，例如 Whodo 就用 Wiki 技术进行网站的搭建。Wiki 中最著名的要数 <ulink url="http://www.wikipedia.org">维基百科</ulink>，它号称要成为我们这个星球上最大的百科全书。（不过某种原因，大陆访问可能受限）
+Wiki 又作维客，是协同著作的伟大实践。可以作为团队的知识库支撑系统，例如 Whodo 就用 Wiki 技术进行网站的搭建。Wiki 中最著名的要数 <ulink url="http://www.wikipedia.org">维基百科</ulink>，它号称要成为我们这个星球上最大的百科全书。（不过为了和谐社会，还是听政府的话，非礼勿视）
 </para>
 <para>
 难道 Wiki 不够么，还要使用 DocBook、Freemind 么？简单的回答就是，Wiki 的文档，不能够本地修改和阅读，必须要在线才能浏览和编辑。
 </para>
-<para>
-那么我来打一个比方。当你的网络出现故障：
-</para>
-<orderedlist>
+<itemizedlist>
 <listitem>
 <para>
-你记得访问过某个 Wiki 网站，其中有关于网络故障诊断的详细资料；
+在线编辑，受带宽限制。响应慢，而且不可离线编辑。
 </para>
 </listitem>
 <listitem>
 <para>
-有一个 DocBook 撰写的网络故障诊断的电子书，你看过并保存在硬盘中。
+文档的本地拷贝，可以抗拒服务器断线以及消失的风险。
+</para>
+<para>
+在 Internet 上提供的 Wiki 服务，受网络通讯限制，政策限制。例如前面提到的网络大百科（WikiPedia.org）被政府管制,2006年起无法访问； BlueHost.com 是 本网站（WorldHello.net）曾经的托管商，在 2006 年底，也由于管制而断网。
+</para>
+<para>
+本地局域网的 Wiki，也会由于企业没有完备的灾难恢复制度，造成数据丢失。
 </para>
 </listitem>
-</orderedlist>
+<listitem>
 <para>
-第一种情况显然是远水救不了近火，因为网络故障都上不了网，何谈访问 Wiki。此时本地保存的 Freemind 文件，或者 DocBook 生成的多种格式的，能够实现的本地浏览的、可打印的、有作者署名的电子文档，马上就能够派上大用场。本地浏览，Wiki 还做不到。 
-</para>
-<para>
-打印甚至出版的需要，使得 DocBook 更胜一筹，Single Sourcing，单一文档，多种输出格式，是多少人梦寐以求的啊。 
-</para>
-<para>
-FreeMiind 的提纲挈领，FreeMind 的知识和智力的双向转化，是任何其它格式替代不了的。无论 Wiki 还是 DocBook 都存在着篇幅稍大，文章结构难以把握，而这正是 FreeMind 的强项。 
-</para>
-<para>
-Wiki 赖以成名的还有其易用的版本控制系统，但仅仅限于 Wiki 条目本身而已。Whodo 提供的 SVN 版本控制服务则对 Whodo 所有的文档和代码通通管理起来，虽然使用更复杂，但绝对值得交学费。
+FreeMind/DocBook 格式的文档，让作者有了归属感，使得个人更有成就感。将个人知识管理和团队知识管理的有机整合，才是成功的知识管理平台。
 </para>
 <para>
 Eric 在谈到程序员投入到开源软件动机的时候，提到“个人成就感”是非常重要一环。而撰写一篇署名的电子文档的成就感显然比没有署名的 Wiki 页面更有成就感。
 </para>
+</listitem>
+<listitem>
+<para>
+Wiki 的文档，不能够本地修改和阅读，必须要在线才能浏览和编辑。
+</para>
+<para>
+举个例子，当你的网络出现故障，需要求助时： 一、你记得访问过某个 Wiki 网站，其中有关于网络故障如何诊断文章； 二、有一个 DocBook/FreeMind 撰写的网络故障诊断的电子书，并且就在硬盘中。 第一种情况显然是远水救不了近火，网络故障都上不了网，何谈访问 Wiki 页面。 DocBook 和 FreeMind 技术能够撰写出可本地浏览，可打印的，有作者署名的电子文档，是 Wiki 不可替代的。
+</para>
+</listitem>
+<listitem>
+<para>
+打印甚至出版的需要，使得 DocBook 更胜一筹，Single Sourcing，单一文档，多种输出格式，是多少人梦寐以求的啊。 
+</para>
+</listitem>
+<listitem>
+<para>
+FreeMiind 的提纲挈领，FreeMind 的知识和智力的双向转化，是任何其它格式替代不了的。
+</para>
+<para>
+无论 Wiki 还是 DocBook 都存在着篇幅稍大，文章结构难以把握，而这正是 FreeMind 的强项。 
+</para>
+</listitem>
+<listitem>
+<para>
+Wiki 赖以成名的还有其易用的版本控制系统，但仅仅限于 Wiki 条目本身而已。Whodo 提供的 SVN 版本控制服务则对 Whodo 所有的文档和代码通通管理起来，虽然使用更复杂，但绝对值得交学费。
+</para>
 <para>
 不过 Whodo 中 Wiki 也是重要一环，因为 Wiki 用来构建文档的索引、链接、归类，便于搜索引擎的检索。
 </para>
+</listitem>
+</itemizedlist>
+
 </sect1>
 
 <sect1 id="whodosubsystem"><title>Whodo 子系统</title>
@@ -240,10 +286,10 @@ Whodo 主要包括 邮件列表、维客、论坛、问题追踪系统、版本�
 SVN 版本控制系统，是 WHODO 作者修改和提交文章的支撑系统。普通用户只有只读权限，作者/贡献者拥有 “/trunk/doc” 目录的完全权限。
 </para>
 <para>
-在账号整合之前，如果用户需要修改用户口令，需要用 htpasswd -nm 创建口令，将加密口令传给管理员即可。
+在账号整合之前，可以用 CGI 修改自己的口令。
 </para>
 <para>
-地址，参见： <ulink url="http://svn.worldhello.net"/>。
+地址，参见： <ulink url="http://svn.worldhello.net/svn"/>。
 </para>
 </sect2>
 
@@ -496,7 +542,7 @@ id 和 type 属性
 <sect1 id="docs"><title>Whodo 文档列表</title>
 <note>
 <para>
-更完备的文档列表，请参见 Whodo Wiki 的文档目录: <ulink url="http://whodo.worldhello.net/wiki/Category:Doc"/>
+下面的文档列表是手工收集而成，可能并不全面，也不能保证链接有效。Wiki 中的文档列表是自动创建的，因而更有参考价值。WHODO Wiki 中的文档列表请参见: <ulink url="http://whodo.worldhello.net/wiki/Category:Doc">Whodo Wiki 的文档目录</ulink>。
 </para>
 </note>
 
@@ -537,8 +583,33 @@ id 和 type 属性
 
 <sect1 id="contributors"><title>Whodo 贡献者列表</title>
 <para>
-参见 <ulink url="http://whodo.worldhello.net/wiki/Category:Author"/>
+参见 <ulink url="http://whodo.worldhello.net/wiki/Category:Author">这里</ulink>。
 </para>
+</sect1>
+
+<sect1 id="restriction"><title>题外话： Whodo 安全</title>
+<para>
+安全永远不是题外话，不过一部分这里所指的安全，是有中国特色的。
+</para>
+<sect2><title>文档质量标准</title>
+<para>
+适合多人协作的文档。提交到 Whodo 上，就蕴含请大家补充和指正的意思。
+</para>
+<para>
+文档不能违反中国的法律和道德规范。
+</para>
+<para>
+文档不能涉及政治、宗教、言论自由，莫谈国事。
+</para>
+<sect2>
+<sect2><title>禁止滥用</title>
+<para>
+Whodo 的各个子系统都和邮件列表联动，能够使得垃圾数据的提交会被及早发现。
+</para>
+<para>
+一旦发现用户提交垃圾数据或者破坏他人文章的行为，管理员有权封锁直至删除该用户账号。
+</para>
+<sect2>
 </sect1>
 
 <appendix id="worldhello"><title>Whodo 前传</title>
@@ -611,13 +682,8 @@ Freemind 0.8.0 对于 Unicode 支持也不好，存储的 .mm 文件的编码方
 我本人并非 Java 专家，只是由于 Freemind 的这些小缺点搔到了我的痒处，使得我不得不率先做了修改 Freemind 的尝试。我对 Freemind 的修改已经提交到 Freemind 的 Wiki 页面上了，参见: <ulink url="http://freemind.sourceforge.net/wiki/index.php/User:Jiangxin">http://freemind.sourceforge.net/wiki/index.php/User:Jiangxin</ulink>。
 </para>
 <para>
-FreeMind hacked 代码可以从 Whodo 网站下载，编译好的二进制文件也可以下载到。地址参见：<ulink url="http://whodo.worldhello.net/wiki/FreeMind">Whodo Wiki 上的 FreeMind 条目</ulink>；
+Whodo 增强版的 FreeMind 可以从 <ulink url="http://update.ossxp.com/public">群英汇升级网站（演示）</ulink>下载。有 Debian Linux 的版本，也有 Windows 的版本。
 </para>
-<warning>
-<para>
-但是这个版本的 Freemind 合并 .mm 文件和 .mmx 文件的处理上非常低效，我也把这个问题提交到 Freemind 的网站上了，希望 Java 高手能助一臂之力。
-</para>
-</warning>
 </appendix>
 
 <appendix id="docbook"><title>关于 DocBook</title>
@@ -663,6 +729,9 @@ trunk/includes
 </para>
 <para>
 样式表、DocBook 文档有关的图标、图片，FreeMind Flash 有关文件
+</para>
+<para>
+注：如果安装了“群英汇”的 ossxp-docbook 软件包，则使用该软件包中的包含文件。
 </para>
 </listitem>
 <listitem>
@@ -799,6 +868,8 @@ Makefile	= svn:eol-style=LF
 *.xsl	= svn:eol-style=native;svn:mime-type=text/xml
 *.xslt	= svn:eol-style=native;svn:mime-type=text/xml
 README	= svn:eol-style=native
+# 下面的语句有风险，只有用 “群英汇-开源速递” 提供的 Subversion 客户端才可以使用。
+# * = svn:eol-style=native
 ]]>
 </screen>
 
@@ -820,7 +891,7 @@ Whodo SVN 要求提交对书写 Commit Log。目前的检查，仅仅限于长�
 
 <sect1><title>SVN 客户端</title>
 <para>
-对于 Windows 平台，我们推荐使用 TortoiseSVN。我们还推荐安装 Cygwin，并使用 Cygwin 提供的 svn 命令行客户端。
+对于 Windows 平台，我们推荐使用 TortoiseSVN。我们还推荐安装 Cygwin，不过 Cygwin 提供的 svn 命令行客户端对中文支持不好，可以使用官方发行的 Windows 下的 subversion 命令行。
 </para>
 </sect1>
 
