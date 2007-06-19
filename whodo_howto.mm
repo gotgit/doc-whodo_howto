@@ -3,8 +3,26 @@
 <!-- This file is saved using a hacked version of FreeMind. visit: http://www.worldhello.net, http://ossxp.com -->
 <!-- Orignal FreeMind, can download from http://freemind.sourceforge.net -->
 <!-- This .mm file is CVS/SVN friendly, some atts are saved in .mmx file.(by Worldhello.net) -->
-<node COLOR="#990033" ID="Freemind_Link_1738528425" 
-	TEXT="Whodo Howto">
+<node COLOR="#990033" ID="Freemind_Link_1738528425">
+<richcontent TYPE="NODE"><html>
+  <head>
+    <style type="text/css">
+      <!--
+        p { margin-top: 0 }
+      -->
+    </style>
+    
+  </head>
+  <body>
+    <p style="text-align: center">
+      <font size="5">Whodo Howto </font>
+    </p>
+    <p style="text-align: center">
+      <font size="2">(&#29256;&#26412;&#21495;: 0.3.F-$Rev$)</font>
+    </p>
+  </body>
+</html>
+</richcontent>
 <font BOLD="true" NAME="SansSerif" SIZE="13"/>
 <node FOLDED="true" ID="_" POSITION="right" STYLE="bubble" 
 	TEXT="Whodo 是什么？">
@@ -494,6 +512,24 @@
 <node ID="Freemind_Link_1835240616" 
 	TEXT="Windows 安装 Cygwin，提供更强大命令行支持，包括 svn 命令行客户端。"/>
 </node>
+</node>
+</node>
+<node FOLDED="true" ID="Freemind_Link_1387910425" POSITION="left" 
+	TEXT="版本控制">
+<node FOLDED="true" ID="Freemind_Link_261684618" 
+	TEXT="0.3">
+<node ID="Freemind_Link_805955338" 
+	TEXT="添加版本控制"/>
+</node>
+<node FOLDED="true" ID="Freemind_Link_550468001" 
+	TEXT="0.2">
+<node ID="Freemind_Link_1550613595" 
+	TEXT="补充 svn 说明，Wiki 上载文件以及创建文档草稿的说明。(2006/05/15)"/>
+</node>
+<node FOLDED="true" ID="Freemind_Link_1604207256" 
+	TEXT="0.1">
+<node ID="Freemind_Link_1316999849" 
+	TEXT="初稿。(2006/05/07)"/>
 </node>
 </node>
 </node>
