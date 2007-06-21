@@ -601,7 +601,7 @@ id 和 type 属性
 <para>
 文档不能涉及政治、宗教、言论自由，莫谈国事。
 </para>
-<sect2>
+</sect2>
 <sect2><title>禁止滥用</title>
 <para>
 Whodo 的各个子系统都和邮件列表联动，能够使得垃圾数据的提交会被及早发现。
@@ -609,7 +609,7 @@ Whodo 的各个子系统都和邮件列表联动，能够使得垃圾数据的�
 <para>
 一旦发现用户提交垃圾数据或者破坏他人文章的行为，管理员有权封锁直至删除该用户账号。
 </para>
-<sect2>
+</sect2>
 </sect1>
 
 <appendix id="worldhello"><title>Whodo 前传</title>
