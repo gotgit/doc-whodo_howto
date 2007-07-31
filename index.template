@@ -242,15 +242,15 @@ Wiki 赖以成名的还有其易用的版本控制系统，但仅仅限于 Wiki 
 
 <sect1 id="whodosubsystem"><title>Whodo 子系统</title>
 <para>
-Whodo 主要包括 邮件列表、维客、论坛、问题追踪系统、版本控制系统、FreeMind 编辑编译系统 和 DocBook 编译系统 等组成。
+Whodo 主要包括 账号管理子系统、邮件列表、维客、论坛、问题追踪系统、版本控制系统、FreeMind 编辑编译系统 和 DocBook 编译系统 等组成。
 </para>
 
-<sect2><title>邮件列表</title>
+<sect2><title>账号管理子系统</title>
 <para>
-之所以先提及邮件列表，是因为通过邮件列表，您可以更迅捷的获得  Whodo 的响应。
+WHODO 用户账号统一使用 LDAP 管理，将 Wiki, 论坛, Bug Tracking， Subversion 账号整合在一起。
 </para>
 <para>
-邮件列表系统的地址，参见： <ulink url="http://whodo.worldhello.net/list"/>。
+账号管理地址，参见： <ulink url="https://www.worldhello.net/members/"/>。
 </para>
 </sect2>
 
@@ -283,10 +283,8 @@ Whodo 主要包括 邮件列表、维客、论坛、问题追踪系统、版本�
 
 <sect2><title>Subversion 版本控制系统</title>
 <para>
-SVN 版本控制系统，是 WHODO 作者修改和提交文章的支撑系统。普通用户只有只读权限，作者/贡献者拥有 “/trunk/doc” 目录的完全权限。
-</para>
-<para>
-在账号整合之前，可以用 CGI 修改自己的口令。
+SVN 版本控制系统，是 WHODO 作者修改和提交文章的支撑系统。
+新注册用户拥有只读权限，作者/贡献者拥有 /trunk/doc 目录的完全权限。
 </para>
 <para>
 地址，参见： <ulink url="http://svn.worldhello.net/svn"/>。
@@ -311,6 +309,15 @@ FreeMind 的编译系统，指的是将 *.mm 文件转换为 *.html 文档。
 </para>
 <para>
 参见： <ulink url="http://whodo.worldhello.net/wiki/DocBook"/>。
+</para>
+</sect2>
+
+<sect2><title>邮件列表</title>
+<para>
+之所以先提及邮件列表，是因为通过邮件列表，您可以更迅捷的获得  Whodo 的响应。
+</para>
+<para>
+邮件列表系统的地址，参见： <ulink url="http://whodo.worldhello.net/list"/>。
 </para>
 </sect2>
 
@@ -414,7 +421,7 @@ Whodo Wiki 的 Bug Tracking 系统 的网址为: <ulink url="http://whodo.worldh
 注册账号
 </para>
 <para>
-在 Whodo 各个子系统的用户注册尚未整合之前，需要分别注册；
+在用户管理中心：<ulink url="https://www.worldhello.net/members"/>，注册和管理自己的账号。
 </para>
 </listitem>
 <listitem>
@@ -464,10 +471,13 @@ Whodo Wiki 的 Bug Tracking 系统 的网址为: <ulink url="http://whodo.worldh
 
 <listitem>
 <para>
-给管理者发送邮件，获得账号
+获取 SVN 提交账号
 </para>
 <para>
-可以在 Wiki 上通过 <ulink url="http://whodo.worldhello.net/wiki/Special:Emailuser/admin"/> 给管理员发送邮件。管理员受到邮件后，会阅读用户上传的文档，根据是否符合 whodo 文档精神，批准或否决账号申请。
+在 Whodo 网站注册，已经获得了 SVN 只读账号。
+</para>
+<para>
+要想获取 SVN 提交账号，需要向管理员申请提升权限。可以在 Wiki 上通过 <ulink url="http://whodo.worldhello.net/wiki/Special:Emailuser/admin"/> 给管理员发送邮件。管理员受到邮件后，会阅读用户上传的文档，根据是否符合 whodo 文档精神，批准或否决账号申请。
 </para>
 </listitem>
 
@@ -476,7 +486,7 @@ Whodo Wiki 的 Bug Tracking 系统 的网址为: <ulink url="http://whodo.worldh
 用 subversion 账号提交文档
 </para>
 <para>
-一旦收到管理员提供的 subversion 账户信息后，就可以提交文档。Whodo 文档提交到 Whodo subversion 路径： http://svn.worldhello.net/svn/whodo/trunk/doc 的子目录下。
+一旦 SVN 权限提升为可读写权限，就可以提交文档。Whodo 文档提交到 Whodo subversion 路径： http://svn.worldhello.net/svn/whodo/trunk/doc 的子目录下。
 DocBook 格式文档的首页文档名为 index.xml；FreeMind 文档的文件名和子目录名同名，扩展名为 .mm。
 </para>
 <para>
