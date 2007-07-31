@@ -128,12 +128,12 @@
 </node>
 <node FOLDED="true" ID="Freemind_Link_1876846164" POSITION="right" STYLE="bubble" 
 	TEXT="Whodo 子系统">
-<node FOLDED="true" ID="Freemind_Link_1590385114" 
-	TEXT="邮件列表">
-<node ID="Freemind_Link_21090725" 
-	TEXT="之所以先提及邮件列表，是因为通过邮件列表，您可以更迅捷的获得  Whodo 的响应"/>
-<node ID="Freemind_Link_601607240" LINK="http://whodo.worldhello.net/list" 
-	TEXT="地址： http://whodo.worldhello.net/list"/>
+<node FOLDED="true" ID="Freemind_Link_1717664074" 
+	TEXT="账号管理子系统">
+<node ID="Freemind_Link_489012822" 
+	TEXT="WHODO 用户账号统一使用 LDAP 管理"/>
+<node ID="Freemind_Link_82168925" LINK="https://www.worldhello.net/members/" 
+	TEXT="账号管理URL： https://www.worldhello.net/members/"/>
 </node>
 <node FOLDED="true" ID="Freemind_Link_1451982305" 
 	TEXT="维客">
@@ -159,14 +159,9 @@
 <node ID="Freemind_Link_1566241531" 
 	TEXT="SVN 版本控制系统，是 WHODO 作者修改和提交文章的支撑系统"/>
 <node ID="Freemind_Link_1585344461" 
-	TEXT="普通用户只有只读权限，作者/贡献者拥有 /trunk/doc 目录的完全权限"/>
-<node FOLDED="true" ID="Freemind_Link_241492750" 
-	TEXT="如何修改 subversion 用户账号？">
-<node ID="Freemind_Link_1577381031" 
-	TEXT="在账号整合之前，可以用 cgi 自行更改口令。"/>
-</node>
-<node ID="Freemind_Link_1055499286" LINK="http://svn.worldhello.net" 
-	TEXT="地址： http://svn.worldhello.net"/>
+	TEXT="新注册用户只有只读权限，作者/贡献者拥有 /trunk/doc 目录的完全权限"/>
+<node ID="Freemind_Link_1055499286" LINK="http://svn.worldhello.net/" 
+	TEXT="地址： http://svn.worldhello.net/"/>
 </node>
 <node FOLDED="true" ID="Freemind_Link_1701067644" 
 	TEXT="FreeMind 编辑、编译系统">
@@ -185,6 +180,13 @@
 	TEXT="包括相应的编译脚本，将 DocBook *.xml 转换为 *.html, *.pdf, *.rtf, *.chm, *.txt 等"/>
 <node ID="Freemind_Link_2250577" LINK="http://whodo.worldhello.net/wiki/DocBook" 
 	TEXT="参见： http://whodo.worldhello.net/wiki/DocBook"/>
+</node>
+<node FOLDED="true" ID="Freemind_Link_1590385114" 
+	TEXT="邮件列表">
+<node ID="Freemind_Link_21090725" 
+	TEXT="之所以先提及邮件列表，是因为通过邮件列表，您可以更迅捷的获得  Whodo 的响应"/>
+<node ID="Freemind_Link_601607240" LINK="http://whodo.worldhello.net/list" 
+	TEXT="地址： http://whodo.worldhello.net/list"/>
 </node>
 </node>
 <node FOLDED="true" ID="Freemind_Link_206098046" POSITION="right" STYLE="bubble" 
@@ -243,7 +245,7 @@
 <node ID="Freemind_Link_1929880754" 
 	TEXT="或者您希望了解某方面内容，而文档中没有提及或不详细，您也可以通过问题报告系统提出您的需求，作者或者其它贡献者可能会很快加以完善。"/>
 <node ID="Freemind_Link_1223862034" 
-	TEXT="问题报告系统是对所有用户公开的，您只要到上面注册一个账号即可。"/>
+	TEXT="问题报告系统是对所有用户公开的，您只要在 worldhello.net 网站注册一个账号即可。"/>
 </node>
 </node>
 <node FOLDED="true" ID="Freemind_Link_79757662" 
@@ -259,8 +261,8 @@
 <cloud COLOR="#ccccff"/>
 <node FOLDED="true" ID="Freemind_Link_839000388" 
 	TEXT="注册账号">
-<node ID="Freemind_Link_1715266197" 
-	TEXT="在 Whodo 各个子系统的用户注册尚未整合之前，需要分别注册"/>
+<node ID="Freemind_Link_1715266197" LINK="[http://www.worldhello.net/members/" 
+	TEXT="http://www.worldhello.net/members/"/>
 </node>
 <node FOLDED="true" ID="Freemind_Link_979303706" 
 	TEXT="上传自己的文档，以下任何一种方式均可">
@@ -296,16 +298,21 @@
 </node>
 </node>
 <node FOLDED="true" ID="Freemind_Link_333471908" 
-	TEXT="给管理者发送邮件，获得账号">
+	TEXT="获取 SVN 提交账号">
+<node ID="Freemind_Link_272587221" 
+	TEXT="在 Whodo 网站注册，已经获得了 SVN 只读账号"/>
+<node FOLDED="true" ID="Freemind_Link_1740183193" 
+	TEXT="要想获取 SVN 提交账号，需要向管理员申请提升权限">
 <node ID="Freemind_Link_1212324100" 
 	TEXT="http://whodo.worldhello.net/wiki/Special:Emailuser/admin"/>
+</node>
 <node ID="Freemind_Link_1701697284" 
 	TEXT="管理员受到邮件后，会阅读用户上传的文档，根据是否符合 whodo 文档精神，批准或否决账号申请"/>
 </node>
 <node FOLDED="true" ID="Freemind_Link_942876632" 
 	TEXT="用 subversion 账号提交文档">
 <node ID="Freemind_Link_1863743156" 
-	TEXT="一旦收到管理员提供的 subversion 账户信息后，就可以提交文档"/>
+	TEXT="一旦 SVN 权限提升为可读写权限，就可以提交文档"/>
 <node ID="Freemind_Link_831297785" 
 	TEXT="Whodo 文档提交到 Whodo subversion 路径： http://svn.worldhello.net/svn/whodo/trunk/doc 的子目录下。"/>
 <node ID="Freemind_Link_1776854762" 
