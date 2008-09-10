@@ -563,6 +563,7 @@ id 和 type 属性
 <colspec colname='c3'/>
 <colspec colname='c4'/>
 <tbody>
+<!-- whodo_docs param="list" doc="agile_python"      datefrom="2008/07/20"    title="敏捷Python开发实战 —— pySvnManager"--><!-- /whodo_docs -->
 <!-- whodo_docs param="list" doc="bcp"               datefrom="2002/10/26"    title="业务连续性的保证 —— BCP"--><!-- /whodo_docs -->
 <!-- whodo_docs param="list" doc="bug_tracking"      datefrom="2002/02/26"    title="缺陷追踪系统（Bug Tracking）HOWTO"--><!-- /whodo_docs -->
 <!-- whodo_docs param="list" doc="cvs_vs_starteam"   datefrom="2002/01/08"    title="版本控制：CVS vs. Starteam"--><!-- /whodo_docs -->
