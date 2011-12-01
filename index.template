@@ -569,13 +569,13 @@ id 和 type 属性
 <!-- whodo_docs param="list" doc="cvs_vs_starteam"   datefrom="2002/01/08"    title="版本控制：CVS vs. Starteam"--><!-- /whodo_docs -->
 <!-- whodo_docs param="list" doc="dns_howto"         datefrom="2003/01/22"    title="DNS Howto"--><!-- /whodo_docs -->
 <!-- whodo_docs param="list" doc="docbook_howto"     datefrom="2002/09/18"    title="文档的技术革命 —— DocBook"       mmindex="mindmap/docbook.mm" --><!-- /whodo_docs -->
-<!-- whodo_docs param="list" doc="计算机应用能力考试"     datefrom="2006/05/03"    title="全国专业技术人员计算机应用能力考试" mmindex="index.mm" --><!-- /whodo_docs -->
 <!-- whodo_docs param="list" doc="email_howto"       datefrom="2003/02/11"    title="有效沟通和知识管理 —— Email"--><!-- /whodo_docs -->
 <!-- whodo_docs param="list" doc="freemind"          datefrom="2006/04/17"    title="FreeMind Hacking Howto"--><!-- /whodo_docs -->
 <!-- whodo_docs param="list" doc="health"            datefrom="2003/01/29"    title="摘抄：健康指南"--><!-- /whodo_docs -->
 <!-- whodo_docs param="list" doc="inn_howto"         datefrom="2002/10/14"    title="有效沟通和知识管理 —— News"--><!-- /whodo_docs -->
 <!-- whodo_docs param="list" doc="mailinglist"       datefrom="2003/02/22"    title="有效沟通和知识管理 —— Maillist"--><!-- /whodo_docs -->
 <!-- whodo_docs param="list" doc="makefile_howto"    datefrom="2006/04/26"    title="Makefile Howto"--><!-- /whodo_docs -->
+<!-- whodo_docs param="list" doc="my.record"         datefrom="2003/01/08"    title="我的游泳记录"--><!-- /whodo_docs -->
 <!-- whodo_docs param="list" doc="nightlybuild"      datefrom="2002/03/20"    title="持续集成 —— 每晚构建/Nightly Build"--><!-- /whodo_docs -->
 <!-- whodo_docs param="list" doc="personal_firewall" datefrom="2002/10/30"    title="信息安全 —— 个人防火墙"--><!-- /whodo_docs -->
 <!-- whodo_docs param="list" doc="pgp"               datefrom="2002/02/20"    title="PGP/GPG HOWTO"--><!-- /whodo_docs -->

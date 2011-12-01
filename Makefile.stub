@@ -12,4 +12,4 @@ MM_SRC := whodo_howto.mm
 build_all: index.xml all
 
 index.xml: index.template $(TOOLS_DIR)/bin/update-docs.pl
-	perl $(TOOLS_DIR)/bin/update-docs.pl --template=$< --xml=$@ --dir=..
+	perl $(TOOLS_DIR)/bin/update-docs.pl --template=$< --xml=$@ --doc=../../doc --src=..
